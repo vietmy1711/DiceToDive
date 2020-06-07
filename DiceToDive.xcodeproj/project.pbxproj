@@ -7,21 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D250E9A248CBACC00DA4446 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8D250E99248CBACC00DA4446 /* .gitignore */; };
+		8DAAB192248CADE2000FA67C /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAAB191248CADE2000FA67C /* RewardViewController.swift */; };
+		8DAAB196248CAE7B000FA67C /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAAB195248CAE7B000FA67C /* ChallengeViewController.swift */; };
+		8DAAB198248CAE8C000FA67C /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAAB197248CAE8C000FA67C /* MeViewController.swift */; };
+		8DAAB20E248CB32E000FA67C /* PlayfairDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DAAB202248CB32D000FA67C /* PlayfairDisplay-Black.ttf */; };
+		8DAAB20F248CB32E000FA67C /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DAAB203248CB32D000FA67C /* PlayfairDisplay-Bold.ttf */; };
+		8DAAB210248CB32E000FA67C /* PlayfairDisplay-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DAAB204248CB32D000FA67C /* PlayfairDisplay-ExtraBold.ttf */; };
+		8DAAB211248CB32E000FA67C /* PlayfairDisplay-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DAAB205248CB32D000FA67C /* PlayfairDisplay-BlackItalic.ttf */; };
+		8DAAB212248CB32E000FA67C /* PlayfairDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DAAB206248CB32D000FA67C /* PlayfairDisplay-Medium.ttf */; };
+		8DAAB213248CB32E000FA67C /* PlayfairDisplay-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DAAB207248CB32D000FA67C /* PlayfairDisplay-MediumItalic.ttf */; };
+		8DAAB214248CB32E000FA67C /* PlayfairDisplay-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DAAB208248CB32E000FA67C /* PlayfairDisplay-Italic.ttf */; };
+		8DAAB215248CB32E000FA67C /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DAAB209248CB32E000FA67C /* PlayfairDisplay-Regular.ttf */; };
+		8DAAB216248CB32E000FA67C /* PlayfairDisplay-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DAAB20A248CB32E000FA67C /* PlayfairDisplay-SemiBoldItalic.ttf */; };
+		8DAAB217248CB32E000FA67C /* PlayfairDisplay-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DAAB20B248CB32E000FA67C /* PlayfairDisplay-ExtraBoldItalic.ttf */; };
+		8DAAB218248CB32E000FA67C /* PlayfairDisplay-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DAAB20C248CB32E000FA67C /* PlayfairDisplay-SemiBold.ttf */; };
+		8DAAB219248CB32E000FA67C /* PlayfairDisplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DAAB20D248CB32E000FA67C /* PlayfairDisplay-BoldItalic.ttf */; };
 		8DB1EA6124854146005D169F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB1EA6024854146005D169F /* AppDelegate.swift */; };
 		8DB1EA6324854146005D169F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB1EA6224854146005D169F /* SceneDelegate.swift */; };
-		8DB1EA6524854146005D169F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB1EA6424854146005D169F /* FirstViewController.swift */; };
-		8DB1EA6724854146005D169F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB1EA6624854146005D169F /* SecondViewController.swift */; };
+		8DB1EA6524854146005D169F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB1EA6424854146005D169F /* HomeViewController.swift */; };
+		8DB1EA6724854146005D169F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB1EA6624854146005D169F /* LoginViewController.swift */; };
 		8DB1EA6A24854146005D169F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB1EA6824854146005D169F /* Main.storyboard */; };
 		8DB1EA6C24854148005D169F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB1EA6B24854148005D169F /* Assets.xcassets */; };
 		8DB1EA6F24854148005D169F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB1EA6D24854148005D169F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D250E99248CBACC00DA4446 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		8DAAB191248CADE2000FA67C /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
+		8DAAB195248CAE7B000FA67C /* ChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
+		8DAAB197248CAE8C000FA67C /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		8DAAB202248CB32D000FA67C /* PlayfairDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Black.ttf"; sourceTree = "<group>"; };
+		8DAAB203248CB32D000FA67C /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		8DAAB204248CB32D000FA67C /* PlayfairDisplay-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBold.ttf"; sourceTree = "<group>"; };
+		8DAAB205248CB32D000FA67C /* PlayfairDisplay-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-BlackItalic.ttf"; sourceTree = "<group>"; };
+		8DAAB206248CB32D000FA67C /* PlayfairDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		8DAAB207248CB32D000FA67C /* PlayfairDisplay-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-MediumItalic.ttf"; sourceTree = "<group>"; };
+		8DAAB208248CB32E000FA67C /* PlayfairDisplay-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Italic.ttf"; sourceTree = "<group>"; };
+		8DAAB209248CB32E000FA67C /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		8DAAB20A248CB32E000FA67C /* PlayfairDisplay-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		8DAAB20B248CB32E000FA67C /* PlayfairDisplay-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		8DAAB20C248CB32E000FA67C /* PlayfairDisplay-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
+		8DAAB20D248CB32E000FA67C /* PlayfairDisplay-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-BoldItalic.ttf"; sourceTree = "<group>"; };
 		8DB1EA5D24854146005D169F /* DiceToDive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceToDive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB1EA6024854146005D169F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DB1EA6224854146005D169F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8DB1EA6424854146005D169F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		8DB1EA6624854146005D169F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		8DB1EA6424854146005D169F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8DB1EA6624854146005D169F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8DB1EA6924854146005D169F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DB1EA6B24854148005D169F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DB1EA6E24854148005D169F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,9 +71,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8DAAB193248CADF2000FA67C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8DB1EA6424854146005D169F /* HomeViewController.swift */,
+				8DAAB195248CAE7B000FA67C /* ChallengeViewController.swift */,
+				8DAAB191248CADE2000FA67C /* RewardViewController.swift */,
+				8DAAB197248CAE8C000FA67C /* MeViewController.swift */,
+				8DB1EA6624854146005D169F /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8DAAB194248CADF8000FA67C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DB1EA6824854146005D169F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8DAAB199248CAFA7000FA67C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8DAAB202248CB32D000FA67C /* PlayfairDisplay-Black.ttf */,
+				8DAAB205248CB32D000FA67C /* PlayfairDisplay-BlackItalic.ttf */,
+				8DAAB203248CB32D000FA67C /* PlayfairDisplay-Bold.ttf */,
+				8DAAB20D248CB32E000FA67C /* PlayfairDisplay-BoldItalic.ttf */,
+				8DAAB204248CB32D000FA67C /* PlayfairDisplay-ExtraBold.ttf */,
+				8DAAB20B248CB32E000FA67C /* PlayfairDisplay-ExtraBoldItalic.ttf */,
+				8DAAB208248CB32E000FA67C /* PlayfairDisplay-Italic.ttf */,
+				8DAAB206248CB32D000FA67C /* PlayfairDisplay-Medium.ttf */,
+				8DAAB207248CB32D000FA67C /* PlayfairDisplay-MediumItalic.ttf */,
+				8DAAB209248CB32E000FA67C /* PlayfairDisplay-Regular.ttf */,
+				8DAAB20C248CB32E000FA67C /* PlayfairDisplay-SemiBold.ttf */,
+				8DAAB20A248CB32E000FA67C /* PlayfairDisplay-SemiBoldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		8DB1EA5424854146005D169F = {
 			isa = PBXGroup;
 			children = (
+				8D250E99248CBACC00DA4446 /* .gitignore */,
 				8DB1EA5F24854146005D169F /* DiceToDive */,
 				8DB1EA5E24854146005D169F /* Products */,
 			);
@@ -60,9 +132,9 @@
 			children = (
 				8DB1EA6024854146005D169F /* AppDelegate.swift */,
 				8DB1EA6224854146005D169F /* SceneDelegate.swift */,
-				8DB1EA6424854146005D169F /* FirstViewController.swift */,
-				8DB1EA6624854146005D169F /* SecondViewController.swift */,
-				8DB1EA6824854146005D169F /* Main.storyboard */,
+				8DAAB193248CADF2000FA67C /* Controller */,
+				8DAAB194248CADF8000FA67C /* View */,
+				8DAAB199248CAFA7000FA67C /* Fonts */,
 				8DB1EA6B24854148005D169F /* Assets.xcassets */,
 				8DB1EA6D24854148005D169F /* LaunchScreen.storyboard */,
 				8DB1EA7024854148005D169F /* Info.plist */,
@@ -128,9 +200,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D250E9A248CBACC00DA4446 /* .gitignore in Resources */,
 				8DB1EA6F24854148005D169F /* LaunchScreen.storyboard in Resources */,
+				8DAAB210248CB32E000FA67C /* PlayfairDisplay-ExtraBold.ttf in Resources */,
+				8DAAB216248CB32E000FA67C /* PlayfairDisplay-SemiBoldItalic.ttf in Resources */,
+				8DAAB212248CB32E000FA67C /* PlayfairDisplay-Medium.ttf in Resources */,
+				8DAAB20E248CB32E000FA67C /* PlayfairDisplay-Black.ttf in Resources */,
 				8DB1EA6C24854148005D169F /* Assets.xcassets in Resources */,
+				8DAAB214248CB32E000FA67C /* PlayfairDisplay-Italic.ttf in Resources */,
+				8DAAB219248CB32E000FA67C /* PlayfairDisplay-BoldItalic.ttf in Resources */,
+				8DAAB217248CB32E000FA67C /* PlayfairDisplay-ExtraBoldItalic.ttf in Resources */,
+				8DAAB20F248CB32E000FA67C /* PlayfairDisplay-Bold.ttf in Resources */,
+				8DAAB215248CB32E000FA67C /* PlayfairDisplay-Regular.ttf in Resources */,
+				8DAAB218248CB32E000FA67C /* PlayfairDisplay-SemiBold.ttf in Resources */,
+				8DAAB213248CB32E000FA67C /* PlayfairDisplay-MediumItalic.ttf in Resources */,
 				8DB1EA6A24854146005D169F /* Main.storyboard in Resources */,
+				8DAAB211248CB32E000FA67C /* PlayfairDisplay-BlackItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +226,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DB1EA6724854146005D169F /* SecondViewController.swift in Sources */,
-				8DB1EA6524854146005D169F /* FirstViewController.swift in Sources */,
+				8DAAB192248CADE2000FA67C /* RewardViewController.swift in Sources */,
+				8DAAB198248CAE8C000FA67C /* MeViewController.swift in Sources */,
+				8DB1EA6724854146005D169F /* LoginViewController.swift in Sources */,
+				8DB1EA6524854146005D169F /* HomeViewController.swift in Sources */,
 				8DB1EA6124854146005D169F /* AppDelegate.swift in Sources */,
+				8DAAB196248CAE7B000FA67C /* ChallengeViewController.swift in Sources */,
 				8DB1EA6324854146005D169F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  DiceToDive
 //
 //  Created by MM on 6/1/20.
@@ -8,13 +8,18 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setupUI()
     }
-
+    
+    func setupUI() {
+        
+    }
+    
 
 }
 
