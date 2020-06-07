@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -26,20 +27,51 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2BZ-Ho-u5r">
+                                <rect key="frame" x="24" y="130" width="390" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="l6N-KA-Jyk"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HIL-Gt-5Mb">
+                                    <size key="itemSize" width="128" height="164"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ArticleCollectionViewCell" id="rGO-nd-5Lc">
+                                        <rect key="frame" x="0.0" y="18" width="128" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ang-t8-LKT">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="164"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="128" height="164"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="2BZ-Ho-u5r" secondAttribute="trailing" id="IL8-Z5-RM9"/>
                             <constraint firstItem="1yT-et-MzA" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="30" id="Pn1-D0-9Td"/>
+                            <constraint firstItem="2BZ-Ho-u5r" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="24" id="lsW-U5-7dJ"/>
+                            <constraint firstItem="2BZ-Ho-u5r" firstAttribute="top" secondItem="1yT-et-MzA" secondAttribute="bottom" constant="8" id="myB-rv-NKd"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="1yT-et-MzA" secondAttribute="trailing" constant="24" id="pfC-IH-UwT"/>
                             <constraint firstItem="1yT-et-MzA" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="24" id="sf9-Jy-bEO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="articleCollectionView" destination="2BZ-Ho-u5r" id="cPJ-v2-LVT"/>
+                        <outlet property="articleCollectionViewFlowLayout" destination="HIL-Gt-5Mb" id="yO3-0K-bPM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747.82608695652175" y="-1195.3125"/>
+            <point key="canvasLocation" x="-2746.376811594203" y="-437.27678571428572"/>
         </scene>
         <!--Challenges-->
         <scene sceneID="wg7-f3-ORb">
@@ -51,11 +83,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Challenges" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Challenges" image="book" catalog="system" selectedImage="book.fill" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="-520"/>
+            <point key="canvasLocation" x="-1812" y="-437"/>
         </scene>
         <!--Rewards-->
         <scene sceneID="DU7-RG-Ter">
@@ -67,27 +99,43 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="stq-9g-7aT"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Rewards" id="9mQ-os-qaW"/>
+                    <tabBarItem key="tabBarItem" title="Rewards" image="gift" catalog="system" selectedImage="gift.fill" id="9mQ-os-qaW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zlJ-K9-Zha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="161"/>
+            <point key="canvasLocation" x="-913" y="-437"/>
         </scene>
-        <!--Me-->
+        <!--Notifications-->
         <scene sceneID="bGH-aq-Qhm">
             <objects>
-                <viewController id="vUh-8z-Jiv" customClass="MeViewController" customModule="DiceToDive" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vUh-8z-Jiv" customClass="NotificationViewController" customModule="DiceToDive" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g80-5D-uxn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="dyf-0V-o3p"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Me" id="dBj-Ri-o4M"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="bell" catalog="system" selectedImage="bell.fill" id="dBj-Ri-o4M"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="alI-xH-1st" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="845"/>
+            <point key="canvasLocation" x="-29" y="-437"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="sby-Lp-HO1">
+            <objects>
+                <viewController id="Eco-tH-a8P" customClass="MeViewController" customModule="DiceToDive" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ibk-Ij-nAg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0vg-oX-46d"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="person" catalog="system" selectedImage="person.fill" id="GR6-vu-QCY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mxj-QI-PSn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="-437"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -97,21 +145,31 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="wX9-le-xRX" kind="relationship" relationship="viewControllers" id="uSY-Q7-bzE"/>
                         <segue destination="vUh-8z-Jiv" kind="relationship" relationship="viewControllers" id="M5U-VU-L6c"/>
+                        <segue destination="Eco-tH-a8P" kind="relationship" relationship="viewControllers" id="Jg5-W9-EH6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-912" y="-1195"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="bell" catalog="system" width="128" height="124"/>
+        <image name="bell.fill" catalog="system" width="128" height="124"/>
+        <image name="book" catalog="system" width="128" height="101"/>
+        <image name="book.fill" catalog="system" width="128" height="100"/>
+        <image name="gift" catalog="system" width="128" height="121"/>
+        <image name="gift.fill" catalog="system" width="128" height="128"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
     </resources>
 </document>
