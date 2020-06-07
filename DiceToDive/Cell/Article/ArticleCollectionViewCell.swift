@@ -42,12 +42,12 @@ class ArticleCollectionViewCell: UICollectionViewCell {
     }
     
     func setGradientBackground() {
-        let colorTop =  UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 0).cgColor
-        let colorBottom = UIColor(red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 0.5).cgColor
+        let colorTop =  UIColor(red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 0).cgColor
+        let colorBottom = UIColor(red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 0.8).cgColor
 
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [colorTop, colorBottom]
-        gradientLayer.locations = [0.3, 1.0]
+        gradientLayer.locations = [0.5, 1.0]
         gradientLayer.frame = vwGradient.bounds
 
         vwGradient.layer.insertSublayer(gradientLayer, at:0)
