@@ -10,13 +10,25 @@ import UIKit
 
 class NotificationViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    let notifications = [
+        Notification(img: #imageLiteral(resourceName: "img_hmc"), title: "You have 3 rewards waiting", detail: "Lorem ipsum"),
+        Notification(img: #imageLiteral(resourceName: "img_hmc"), title: "You have 2 challenges waiting", detail: "Lorem ipsum"),
+        Notification(img: #imageLiteral(resourceName: "img_hmc"), title: "You have 3 dice rolls left for today", detail: "Lorem ipsum")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        setup()
     }
     
-
+    func setup() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "NotificationTableViewCell", bundle: nil), forCellReuseIdentifier: "NotificationTableViewCell")
+    }
     /*
     // MARK: - Navigation
 
@@ -27,4 +39,19 @@ class NotificationViewController: UIViewController {
     }
     */
 
+}
+
+extension NotificationViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell", for: indexPath) as! NotificationTableViewCell
+        cell.selectionStyle = .none
+        cell.configWithNotification(notification: notifications[indexPath.row])
+        return cell
+    }
+    
+    
 }

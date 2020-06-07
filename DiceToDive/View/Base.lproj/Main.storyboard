@@ -80,10 +80,34 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Challenges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tg9-zL-4Iq">
+                                <rect key="frame" x="24" y="74" width="366" height="48"/>
+                                <fontDescription key="fontDescription" name="PlayfairDisplay-Black" family="Playfair Display" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oSE-i4-DfC">
+                                <rect key="frame" x="0.0" y="146" width="414" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Tg9-zL-4Iq" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="24" id="9Q4-2q-l4J"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="oSE-i4-DfC" secondAttribute="bottom" id="IpM-Uu-yjU"/>
+                            <constraint firstItem="Tg9-zL-4Iq" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="30" id="K6n-nQ-MxN"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="oSE-i4-DfC" secondAttribute="trailing" id="SHD-7p-pAd"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="Tg9-zL-4Iq" secondAttribute="trailing" constant="24" id="Ywd-jr-jtF"/>
+                            <constraint firstItem="oSE-i4-DfC" firstAttribute="top" secondItem="Tg9-zL-4Iq" secondAttribute="bottom" constant="24" id="i6l-C4-Gf8"/>
+                            <constraint firstItem="oSE-i4-DfC" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="unI-dA-xxj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Challenges" image="book" catalog="system" selectedImage="book.fill" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="tableView" destination="oSE-i4-DfC" id="w7l-PJ-Xj8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,10 +120,34 @@
                     <view key="view" contentMode="scaleToFill" id="wLl-6J-ZO2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApL-Zu-9OI">
+                                <rect key="frame" x="24" y="74" width="366" height="48"/>
+                                <fontDescription key="fontDescription" name="PlayfairDisplay-Black" family="Playfair Display" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fy3-8E-Z9Q">
+                                <rect key="frame" x="0.0" y="146" width="414" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="stq-9g-7aT" firstAttribute="trailing" secondItem="ApL-Zu-9OI" secondAttribute="trailing" constant="24" id="0vW-GT-pxh"/>
+                            <constraint firstItem="ApL-Zu-9OI" firstAttribute="leading" secondItem="stq-9g-7aT" secondAttribute="leading" constant="24" id="Ayx-kh-oBd"/>
+                            <constraint firstItem="Fy3-8E-Z9Q" firstAttribute="top" secondItem="ApL-Zu-9OI" secondAttribute="bottom" constant="24" id="OJ1-qO-gU2"/>
+                            <constraint firstItem="stq-9g-7aT" firstAttribute="trailing" secondItem="Fy3-8E-Z9Q" secondAttribute="trailing" id="XMD-3h-VOB"/>
+                            <constraint firstItem="ApL-Zu-9OI" firstAttribute="top" secondItem="stq-9g-7aT" secondAttribute="top" constant="30" id="XRR-kE-Huz"/>
+                            <constraint firstItem="Fy3-8E-Z9Q" firstAttribute="leading" secondItem="wLl-6J-ZO2" secondAttribute="leading" id="iHr-Um-RDX"/>
+                            <constraint firstItem="stq-9g-7aT" firstAttribute="bottom" secondItem="Fy3-8E-Z9Q" secondAttribute="bottom" id="kLY-4M-v8V"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="stq-9g-7aT"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rewards" image="gift" catalog="system" selectedImage="gift.fill" id="9mQ-os-qaW"/>
+                    <connections>
+                        <outlet property="tableView" destination="Fy3-8E-Z9Q" id="wDj-KL-06h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zlJ-K9-Zha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,16 +160,40 @@
                     <view key="view" contentMode="scaleToFill" id="g80-5D-uxn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIK-dn-WF8">
+                                <rect key="frame" x="24" y="74" width="366" height="48"/>
+                                <fontDescription key="fontDescription" name="PlayfairDisplay-Black" family="Playfair Display" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ht3-nW-gf8">
+                                <rect key="frame" x="8" y="146" width="398" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ht3-nW-gf8" firstAttribute="top" secondItem="hIK-dn-WF8" secondAttribute="bottom" constant="24" id="JBt-dQ-PK4"/>
+                            <constraint firstItem="hIK-dn-WF8" firstAttribute="leading" secondItem="g80-5D-uxn" secondAttribute="leading" constant="24" id="TnY-YK-Kyy"/>
+                            <constraint firstItem="dyf-0V-o3p" firstAttribute="trailing" secondItem="hIK-dn-WF8" secondAttribute="trailing" constant="24" id="ZjL-TG-hDx"/>
+                            <constraint firstItem="dyf-0V-o3p" firstAttribute="bottom" secondItem="ht3-nW-gf8" secondAttribute="bottom" id="bU2-zR-DeW"/>
+                            <constraint firstItem="ht3-nW-gf8" firstAttribute="trailing" secondItem="dyf-0V-o3p" secondAttribute="trailing" constant="-8" id="d78-DC-m5T"/>
+                            <constraint firstItem="ht3-nW-gf8" firstAttribute="leading" secondItem="dyf-0V-o3p" secondAttribute="leading" constant="8" id="fKU-Qr-1aO"/>
+                            <constraint firstItem="hIK-dn-WF8" firstAttribute="top" secondItem="dyf-0V-o3p" secondAttribute="top" constant="30" id="yib-Dp-702"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dyf-0V-o3p"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Notifications" image="bell" catalog="system" selectedImage="bell.fill" id="dBj-Ri-o4M"/>
+                    <connections>
+                        <outlet property="tableView" destination="ht3-nW-gf8" id="UsU-vR-PR5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="alI-xH-1st" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-29" y="-437"/>
         </scene>
-        <!--Item-->
+        <!--Me-->
         <scene sceneID="sby-Lp-HO1">
             <objects>
                 <viewController id="Eco-tH-a8P" customClass="MeViewController" customModule="DiceToDive" customModuleProvider="target" sceneMemberID="viewController">
@@ -131,7 +203,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="0vg-oX-46d"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="person" catalog="system" selectedImage="person.fill" id="GR6-vu-QCY"/>
+                    <tabBarItem key="tabBarItem" title="Me" image="person" catalog="system" selectedImage="person.fill" id="GR6-vu-QCY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mxj-QI-PSn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

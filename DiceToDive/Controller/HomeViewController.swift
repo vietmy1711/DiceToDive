@@ -14,10 +14,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var articleCollectionView: UICollectionView!
     
     let articles = [
-        Article(img: #imageLiteral(resourceName: "img_buivien"), title: "Trải nghiệm tại phố đi bộ Bùi Viện", text: "Lorem ipsum", author: "Tao"),
-        Article(img: #imageLiteral(resourceName: "img_hmc"), title: "Sài Gòn nhìn từ trên cao", text: "Lorem ipsum", author: "Tao"),
-        Article(img: #imageLiteral(resourceName: "img_xienque"), title: "Đi ăn xiên que nè", text: "Lorem ipsum", author: "Tao"),
-        Article(img: #imageLiteral(resourceName: "img_chungcunguyenhue"), title: "Chung cư Nguyễn Huệ", text: "Lorem ipsum", author: "Tao"),
+        Article(img: #imageLiteral(resourceName: "img_buivien"), title: "Experience at Bui Vien Walking Street", text: "Lorem ipsum", author: "Tao"),
+        Article(img: #imageLiteral(resourceName: "img_hmc"), title: "Significant Saigon from above", text: "Lorem ipsum", author: "Tao"),
+        Article(img: #imageLiteral(resourceName: "img_xienque"), title: "Local Street Food", text: "Lorem ipsum", author: "Tao"),
+        Article(img: #imageLiteral(resourceName: "img_chungcunguyenhue"), title: "Nguyen Hue Building", text: "Lorem ipsum", author: "Tao"),
         Article(img: #imageLiteral(resourceName: "img_cheesecoffee"), title: "Cheese Coffee", text: "Lorem ipsum", author: "Tao")
     ]
     
@@ -32,6 +32,7 @@ class HomeViewController: UIViewController {
         articleCollectionView.dataSource = self
         articleCollectionView.register(UINib(nibName: "ArticleCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ArticleCollectionViewCell")
         articleCollectionViewFlowLayout.itemSize = CGSize(width: 280, height: 180)
+
     }
 }
 

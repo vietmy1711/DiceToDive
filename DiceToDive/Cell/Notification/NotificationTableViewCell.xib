@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationTableViewCell" rowHeight="72" id="KGk-i7-Jjw" customClass="NotificationTableViewCell" customModule="DiceToDive" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jaP-Hp-hG6">
+                        <rect key="frame" x="2" y="2" width="316" height="34"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37x-mD-vJ2">
+                                <rect key="frame" x="0.0" y="0.0" width="316" height="34"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bell.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gA2-gR-xwr">
+                                        <rect key="frame" x="16" y="16.5" width="20" height="19.5"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="ExS-uE-zgK"/>
+                                            <constraint firstAttribute="height" constant="20" id="urL-tT-5BF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7h-Cy-H7s">
+                                        <rect key="frame" x="52" y="8" width="252" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="I7h-Cy-H7s" firstAttribute="leading" secondItem="gA2-gR-xwr" secondAttribute="trailing" constant="16" id="7uJ-Di-nAW"/>
+                                    <constraint firstItem="gA2-gR-xwr" firstAttribute="top" secondItem="37x-mD-vJ2" secondAttribute="top" constant="16" id="AN4-5I-qck"/>
+                                    <constraint firstAttribute="bottom" secondItem="I7h-Cy-H7s" secondAttribute="bottom" constant="8" id="GsA-le-tgf"/>
+                                    <constraint firstAttribute="bottom" secondItem="gA2-gR-xwr" secondAttribute="bottom" constant="16" id="SC7-sz-t3O"/>
+                                    <constraint firstAttribute="trailing" secondItem="I7h-Cy-H7s" secondAttribute="trailing" constant="12" id="qzA-NC-Maa"/>
+                                    <constraint firstItem="gA2-gR-xwr" firstAttribute="leading" secondItem="37x-mD-vJ2" secondAttribute="leading" constant="16" id="rQl-j5-DSZ"/>
+                                    <constraint firstItem="I7h-Cy-H7s" firstAttribute="top" secondItem="37x-mD-vJ2" secondAttribute="top" constant="8" id="veC-Lh-Gp8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="37x-mD-vJ2" firstAttribute="leading" secondItem="jaP-Hp-hG6" secondAttribute="leading" id="7dm-9s-WYa"/>
+                            <constraint firstAttribute="bottom" secondItem="37x-mD-vJ2" secondAttribute="bottom" id="FWg-cs-awZ"/>
+                            <constraint firstAttribute="trailing" secondItem="37x-mD-vJ2" secondAttribute="trailing" id="LsO-6h-xaE"/>
+                            <constraint firstItem="37x-mD-vJ2" firstAttribute="top" secondItem="jaP-Hp-hG6" secondAttribute="top" id="SXO-V0-6Of"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jaP-Hp-hG6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="0kW-Ia-eCP"/>
+                    <constraint firstAttribute="bottom" secondItem="jaP-Hp-hG6" secondAttribute="bottom" constant="2" id="EqI-5L-cWz"/>
+                    <constraint firstAttribute="trailing" secondItem="jaP-Hp-hG6" secondAttribute="trailing" constant="2" id="VEk-fh-l2U"/>
+                    <constraint firstItem="jaP-Hp-hG6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="fAR-OE-1Sm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblTitle" destination="I7h-Cy-H7s" id="2LL-YR-ZgJ"/>
+                <outlet property="vwContainer" destination="jaP-Hp-hG6" id="Bki-S5-XTF"/>
+                <outlet property="vwMask" destination="37x-mD-vJ2" id="kKu-bY-WQ6"/>
+            </connections>
+            <point key="canvasLocation" x="127.53623188405798" y="161.38392857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bell.fill" catalog="system" width="128" height="124"/>
+    </resources>
+</document>
