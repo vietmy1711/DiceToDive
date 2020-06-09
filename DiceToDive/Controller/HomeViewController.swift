@@ -12,6 +12,9 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var articleCollectionViewFlowLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var articleCollectionView: UICollectionView!
+    @IBOutlet weak var btnStartNow: UIButton!
+    @IBOutlet weak var vwContainer: UIView!
+    @IBOutlet weak var vwMask: UIView!
     
     let articles = [
         Article(img: #imageLiteral(resourceName: "img_buivien"), title: "Experience at Bui Vien Walking Street", text: "Lorem ipsum", author: "Tao"),
@@ -28,11 +31,24 @@ class HomeViewController: UIViewController {
     }
 
     func setup() {
+       
         articleCollectionView.delegate = self
         articleCollectionView.dataSource = self
+        
         articleCollectionView.register(UINib(nibName: "ArticleCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ArticleCollectionViewCell")
         articleCollectionViewFlowLayout.itemSize = CGSize(width: 280, height: 180)
-
+        btnStartNow.layer.borderColor = UIColor.systemOrange.cgColor
+        btnStartNow.layer.cornerRadius = 20
+        btnStartNow.layer.borderWidth = 2
+        
+        vwMask.layer.masksToBounds = true
+        vwMask.layer.cornerRadius = 20
+        
+        vwContainer.layer.cornerRadius = 20
+        vwContainer.layer.shadowColor = UIColor.black.cgColor
+        vwContainer.layer.shadowOffset = CGSize(width: 0, height: 4)
+        vwContainer.layer.shadowRadius = 4
+        vwContainer.layer.shadowOpacity = 0.2
     }
 }
 
