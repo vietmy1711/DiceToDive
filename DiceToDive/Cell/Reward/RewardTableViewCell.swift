@@ -1,22 +1,30 @@
 //
-//  NotificationTableViewCell.swift
+//  RewardTableViewCell.swift
 //  DiceToDive
 //
-//  Created by MM on 6/7/20.
+//  Created by MM on 6/10/20.
 //  Copyright © 2020 MM. All rights reserved.
 //
 
 import UIKit
 
-class NotificationTableViewCell: UITableViewCell {
+class RewardTableViewCell: UITableViewCell {
 
     @IBOutlet weak var vwContainer: UIView!
     @IBOutlet weak var vwMask: UIView!
+    @IBOutlet weak var imgLogo: UIImageView!
     @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblExpiration: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
         setupCell()
     }
     
@@ -30,15 +38,10 @@ class NotificationTableViewCell: UITableViewCell {
         vwMask.layer.masksToBounds = true
         vwMask.layer.cornerRadius = 8
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
-    func configWithNotification(notification: Notification) {
-        lblTitle.text = notification.title
+    func configWithReward(_ reward: Reward) {
+        imgLogo.image = reward.img
+        lblTitle.text = reward.title
+        lblExpiration.text = "Expires after: \(reward.expirationDate)"
     }
-    
 }

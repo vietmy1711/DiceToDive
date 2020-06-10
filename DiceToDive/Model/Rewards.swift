@@ -14,6 +14,5 @@ struct Reward {
     let detail: String
     let expirationDate: String
     let qrCode: String
-    
-    
+
 }

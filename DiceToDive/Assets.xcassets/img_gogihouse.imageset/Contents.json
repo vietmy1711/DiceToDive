@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "gogihouse-300x150_300x150.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

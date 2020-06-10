@@ -12,6 +12,8 @@
 		8D250EA0248CCAC700DA4446 /* ArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D250E9E248CCAC700DA4446 /* ArticleCollectionViewCell.swift */; };
 		8D250EA1248CCAC700DA4446 /* ArticleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D250E9F248CCAC700DA4446 /* ArticleCollectionViewCell.xib */; };
 		8D250EA4248CD1F100DA4446 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D250EA3248CD1F100DA4446 /* Article.swift */; };
+		8D77E9C424908DC6009A7D39 /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77E9C224908DC6009A7D39 /* RewardTableViewCell.swift */; };
+		8D77E9C524908DC6009A7D39 /* RewardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D77E9C324908DC6009A7D39 /* RewardTableViewCell.xib */; };
 		8D7AF880248CE440001E66AB /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7AF87F248CE440001E66AB /* Notification.swift */; };
 		8D7AF882248CE5E1001E66AB /* Rewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7AF881248CE5E1001E66AB /* Rewards.swift */; };
 		8D7AF885248CEF79001E66AB /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7AF883248CEF79001E66AB /* NotificationTableViewCell.swift */; };
@@ -46,6 +48,8 @@
 		8D250E9E248CCAC700DA4446 /* ArticleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCollectionViewCell.swift; sourceTree = "<group>"; };
 		8D250E9F248CCAC700DA4446 /* ArticleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleCollectionViewCell.xib; sourceTree = "<group>"; };
 		8D250EA3248CD1F100DA4446 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		8D77E9C224908DC6009A7D39 /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
+		8D77E9C324908DC6009A7D39 /* RewardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardTableViewCell.xib; sourceTree = "<group>"; };
 		8D7AF87F248CE440001E66AB /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		8D7AF881248CE5E1001E66AB /* Rewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewards.swift; sourceTree = "<group>"; };
 		8D7AF883248CEF79001E66AB /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 		8D250E9D248CCA8F00DA4446 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				8D77E9C124908D98009A7D39 /* Reward */,
 				8D7AF87E248CE3E5001E66AB /* Notification */,
 				8D7AF87D248CE3DD001E66AB /* Article */,
 			);
@@ -104,6 +109,15 @@
 				8D7AF881248CE5E1001E66AB /* Rewards.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8D77E9C124908D98009A7D39 /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+				8D77E9C224908DC6009A7D39 /* RewardTableViewCell.swift */,
+				8D77E9C324908DC6009A7D39 /* RewardTableViewCell.xib */,
+			);
+			path = Reward;
 			sourceTree = "<group>";
 		};
 		8D7AF87D248CE3DD001E66AB /* Article */ = {
@@ -259,6 +273,7 @@
 				8D250E9A248CBACC00DA4446 /* .gitignore in Resources */,
 				8DB1EA6F24854148005D169F /* LaunchScreen.storyboard in Resources */,
 				8DAAB210248CB32E000FA67C /* PlayfairDisplay-ExtraBold.ttf in Resources */,
+				8D77E9C524908DC6009A7D39 /* RewardTableViewCell.xib in Resources */,
 				8DAAB216248CB32E000FA67C /* PlayfairDisplay-SemiBoldItalic.ttf in Resources */,
 				8DAAB212248CB32E000FA67C /* PlayfairDisplay-Medium.ttf in Resources */,
 				8DAAB20E248CB32E000FA67C /* PlayfairDisplay-Black.ttf in Resources */,
@@ -288,6 +303,7 @@
 				8DAAB198248CAE8C000FA67C /* MeViewController.swift in Sources */,
 				8D7AF885248CEF79001E66AB /* NotificationTableViewCell.swift in Sources */,
 				8D250E9C248CC8F100DA4446 /* NotificationViewController.swift in Sources */,
+				8D77E9C424908DC6009A7D39 /* RewardTableViewCell.swift in Sources */,
 				8D250EA0248CCAC700DA4446 /* ArticleCollectionViewCell.swift in Sources */,
 				8D250EA4248CD1F100DA4446 /* Article.swift in Sources */,
 				8DB1EA6724854146005D169F /* LoginViewController.swift in Sources */,

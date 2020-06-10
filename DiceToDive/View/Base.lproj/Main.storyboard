@@ -278,7 +278,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fy3-8E-Z9Q">
-                                <rect key="frame" x="0.0" y="146" width="414" height="667"/>
+                                <rect key="frame" x="8" y="146" width="398" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -287,9 +287,9 @@
                             <constraint firstItem="stq-9g-7aT" firstAttribute="trailing" secondItem="ApL-Zu-9OI" secondAttribute="trailing" constant="24" id="0vW-GT-pxh"/>
                             <constraint firstItem="ApL-Zu-9OI" firstAttribute="leading" secondItem="stq-9g-7aT" secondAttribute="leading" constant="24" id="Ayx-kh-oBd"/>
                             <constraint firstItem="Fy3-8E-Z9Q" firstAttribute="top" secondItem="ApL-Zu-9OI" secondAttribute="bottom" constant="24" id="OJ1-qO-gU2"/>
-                            <constraint firstItem="stq-9g-7aT" firstAttribute="trailing" secondItem="Fy3-8E-Z9Q" secondAttribute="trailing" id="XMD-3h-VOB"/>
+                            <constraint firstItem="stq-9g-7aT" firstAttribute="trailing" secondItem="Fy3-8E-Z9Q" secondAttribute="trailing" constant="8" id="XMD-3h-VOB"/>
                             <constraint firstItem="ApL-Zu-9OI" firstAttribute="top" secondItem="stq-9g-7aT" secondAttribute="top" constant="30" id="XRR-kE-Huz"/>
-                            <constraint firstItem="Fy3-8E-Z9Q" firstAttribute="leading" secondItem="wLl-6J-ZO2" secondAttribute="leading" id="iHr-Um-RDX"/>
+                            <constraint firstItem="Fy3-8E-Z9Q" firstAttribute="leading" secondItem="wLl-6J-ZO2" secondAttribute="leading" constant="8" id="iHr-Um-RDX"/>
                             <constraint firstItem="stq-9g-7aT" firstAttribute="bottom" secondItem="Fy3-8E-Z9Q" secondAttribute="bottom" id="kLY-4M-v8V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="stq-9g-7aT"/>
