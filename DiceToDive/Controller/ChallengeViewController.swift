@@ -11,7 +11,7 @@ import UIKit
 class ChallengeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-
+    
     var challenges: [Challenge] = [
         Challenge(title: "Explore Ben Thanh Market", description: "Considered one of the most reconigzable of Ho Chi Minh City, it will be such a waste of you don't drop by. Check this now!", objectives: [
             Objective(title: "Pass by Ben Thanh Terminal", status: true),
@@ -58,7 +58,14 @@ extension ChallengeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            //rewards.remove(at: indexPath.row)
+            let alert = UIAlertController(title: "Are you sure you want to delete this?", message: "If you delete this, you will have to find this again", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (_) in
+                self.challenges.remove(at: indexPath.row)
+                tableView.reloadData()
+            }))
+            alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+            
+            self.present(alert, animated: true)
         }
     }
 }
