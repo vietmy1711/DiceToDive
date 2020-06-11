@@ -238,7 +238,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oSE-i4-DfC">
-                                <rect key="frame" x="0.0" y="146" width="414" height="667"/>
+                                <rect key="frame" x="8" y="146" width="398" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -247,10 +247,10 @@
                             <constraint firstItem="Tg9-zL-4Iq" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="24" id="9Q4-2q-l4J"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="oSE-i4-DfC" secondAttribute="bottom" id="IpM-Uu-yjU"/>
                             <constraint firstItem="Tg9-zL-4Iq" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="30" id="K6n-nQ-MxN"/>
-                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="oSE-i4-DfC" secondAttribute="trailing" id="SHD-7p-pAd"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="oSE-i4-DfC" secondAttribute="trailing" constant="8" id="SHD-7p-pAd"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="Tg9-zL-4Iq" secondAttribute="trailing" constant="24" id="Ywd-jr-jtF"/>
                             <constraint firstItem="oSE-i4-DfC" firstAttribute="top" secondItem="Tg9-zL-4Iq" secondAttribute="bottom" constant="24" id="i6l-C4-Gf8"/>
-                            <constraint firstItem="oSE-i4-DfC" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="unI-dA-xxj"/>
+                            <constraint firstItem="oSE-i4-DfC" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="8" id="unI-dA-xxj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>

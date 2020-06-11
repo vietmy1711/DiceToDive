@@ -12,7 +12,7 @@ class NotificationViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let notifications = [
+    var notifications = [
         Notification(img: #imageLiteral(resourceName: "img_hmc"), title: "You have 3 rewards waiting", detail: "Lorem ipsum"),
         Notification(img: #imageLiteral(resourceName: "img_hmc"), title: "You have 2 challenges waiting", detail: "Lorem ipsum"),
         Notification(img: #imageLiteral(resourceName: "img_hmc"), title: "You have 3 dice rolls left for today", detail: "Lorem ipsum")
@@ -43,7 +43,7 @@ class NotificationViewController: UIViewController {
 
 extension NotificationViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return notifications.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -53,5 +53,14 @@ extension NotificationViewController: UITableViewDelegate, UITableViewDataSource
         return cell
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        true
+    }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            notifications.remove(at: indexPath.row)
+        }
+        tableView.reloadData()
+    }
 }

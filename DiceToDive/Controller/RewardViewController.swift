@@ -12,7 +12,7 @@ class RewardViewController: UIViewController{
 
     @IBOutlet weak var tableView: UITableView!
     
-    let rewards = [
+    var rewards = [
         Reward(img: #imageLiteral(resourceName: "img_gongcha"), title: "Free one topping at Gong Cha", detail: "Lorem ipsum", expirationDate: "30/4/1975", qrCode: "bfuYVUYVfqnsjduibYVDq"),
         Reward(img: #imageLiteral(resourceName: "img_hotpotstory"), title: "Discount 10% at HotPot Story", detail: "Lorem ipsum", expirationDate: "30/4/1975", qrCode: "ugYYfBIUFBqfASdiaodiad"),
         Reward(img: #imageLiteral(resourceName: "img_gogihouse"), title: "Discount 15% at GoGi House Van Hanh Mall", detail: "Lorem ipsum", expirationDate: "30/4/1975", qrCode: "nJUBNViuwbfUIBbqefqu"),
