@@ -13,7 +13,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Home-->
+        <!--Home View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="HomeViewController" customModule="DiceToDive" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,10 +22,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2m-Ur-spb">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5a-Qb-n8T">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yT-et-MzA">
                                                 <rect key="frame" x="24" y="30" width="366" height="48"/>
@@ -210,18 +210,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="dVk-pa-8oW"/>
                     <connections>
                         <outlet property="articleCollectionView" destination="2BZ-Ho-u5r" id="cPJ-v2-LVT"/>
                         <outlet property="articleCollectionViewFlowLayout" destination="HIL-Gt-5Mb" id="yO3-0K-bPM"/>
                         <outlet property="btnStartNow" destination="0Ki-b8-jvf" id="JJn-CJ-bdl"/>
+                        <outlet property="vwChallangeContainer" destination="T8g-J9-WmE" id="a7l-9f-UVQ"/>
                         <outlet property="vwContainer" destination="RMy-9t-Dcb" id="79k-G6-VzQ"/>
                         <outlet property="vwMask" destination="zxh-0L-dDE" id="awC-gk-del"/>
+                        <outlet property="vwRewardContainer" destination="Cbo-2i-XiH" id="BCC-H7-zq4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2746.376811594203" y="-437.27678571428572"/>
+            <point key="canvasLocation" x="-2746" y="267"/>
         </scene>
         <!--Challenges-->
         <scene sceneID="wg7-f3-ORb">
@@ -261,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1812" y="-437"/>
+            <point key="canvasLocation" x="-1813" y="-437"/>
         </scene>
         <!--Rewards-->
         <scene sceneID="DU7-RG-Ter">
@@ -341,7 +343,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="alI-xH-1st" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-29" y="-437"/>
+            <point key="canvasLocation" x="-30" y="-437"/>
         </scene>
         <!--Me-->
         <scene sceneID="sby-Lp-HO1">
@@ -370,7 +372,7 @@
                         <color key="selectedImageTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="fbx-zc-Sqz" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="wX9-le-xRX" kind="relationship" relationship="viewControllers" id="uSY-Q7-bzE"/>
                         <segue destination="vUh-8z-Jiv" kind="relationship" relationship="viewControllers" id="M5U-VU-L6c"/>
@@ -380,6 +382,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-912" y="-1195"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="H8Y-B8-1Wc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fbx-zc-Sqz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QGP-Hd-qOQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="9Ss-gG-O4h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Wk-Ff-AvG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2746.376811594203" y="-437.27678571428572"/>
         </scene>
     </scenes>
     <resources>

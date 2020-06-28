@@ -16,6 +16,10 @@
 		8D286D4624928F720074F8C8 /* ChallengeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D286D4424928F720074F8C8 /* ChallengeTableViewCell.xib */; };
 		8D286D48249294040074F8C8 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D286D47249294040074F8C8 /* Challenge.swift */; };
 		8D286D4A249294980074F8C8 /* Objective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D286D49249294980074F8C8 /* Objective.swift */; };
+		8D3E1E3824A8417C00068EE2 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E1E3624A8417C00068EE2 /* ArticleViewController.swift */; };
+		8D3E1E3924A8417C00068EE2 /* ArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3E1E3724A8417C00068EE2 /* ArticleViewController.xib */; };
+		8D3E1E3E24A8839400068EE2 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E1E3C24A8839400068EE2 /* TaskViewController.swift */; };
+		8D3E1E3F24A8839400068EE2 /* TaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3E1E3D24A8839400068EE2 /* TaskViewController.xib */; };
 		8D77E9C424908DC6009A7D39 /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77E9C224908DC6009A7D39 /* RewardTableViewCell.swift */; };
 		8D77E9C524908DC6009A7D39 /* RewardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D77E9C324908DC6009A7D39 /* RewardTableViewCell.xib */; };
 		8D7AF880248CE440001E66AB /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7AF87F248CE440001E66AB /* Notification.swift */; };
@@ -56,6 +60,10 @@
 		8D286D4424928F720074F8C8 /* ChallengeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengeTableViewCell.xib; sourceTree = "<group>"; };
 		8D286D47249294040074F8C8 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		8D286D49249294980074F8C8 /* Objective.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objective.swift; sourceTree = "<group>"; };
+		8D3E1E3624A8417C00068EE2 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		8D3E1E3724A8417C00068EE2 /* ArticleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleViewController.xib; sourceTree = "<group>"; };
+		8D3E1E3C24A8839400068EE2 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		8D3E1E3D24A8839400068EE2 /* TaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskViewController.xib; sourceTree = "<group>"; };
 		8D77E9C224908DC6009A7D39 /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		8D77E9C324908DC6009A7D39 /* RewardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardTableViewCell.xib; sourceTree = "<group>"; };
 		8D7AF87F248CE440001E66AB /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
@@ -131,6 +139,24 @@
 			path = Challenge;
 			sourceTree = "<group>";
 		};
+		8D3E1E3A24A8418100068EE2 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				8D3E1E3624A8417C00068EE2 /* ArticleViewController.swift */,
+				8D3E1E3724A8417C00068EE2 /* ArticleViewController.xib */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		8D3E1E3B24A8832D00068EE2 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				8D3E1E3C24A8839400068EE2 /* TaskViewController.swift */,
+				8D3E1E3D24A8839400068EE2 /* TaskViewController.xib */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
 		8D77E9C124908D98009A7D39 /* Reward */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +193,8 @@
 				8DAAB197248CAE8C000FA67C /* MeViewController.swift */,
 				8DB1EA6624854146005D169F /* LoginViewController.swift */,
 				8D250E9B248CC8F100DA4446 /* NotificationViewController.swift */,
+				8D3E1E3B24A8832D00068EE2 /* Task */,
+				8D3E1E3A24A8418100068EE2 /* Article */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -222,8 +250,8 @@
 				8DB1EA6224854146005D169F /* SceneDelegate.swift */,
 				8D250E9D248CCA8F00DA4446 /* Cell */,
 				8D250EA2248CD1CC00DA4446 /* Model */,
-				8DAAB193248CADF2000FA67C /* Controller */,
 				8DAAB194248CADF8000FA67C /* View */,
+				8DAAB193248CADF2000FA67C /* Controller */,
 				8DAAB199248CAFA7000FA67C /* Fonts */,
 				8DB1EA6B24854148005D169F /* Assets.xcassets */,
 				8DB1EA6D24854148005D169F /* LaunchScreen.storyboard */,
@@ -293,6 +321,7 @@
 				8D250E9A248CBACC00DA4446 /* .gitignore in Resources */,
 				8DB1EA6F24854148005D169F /* LaunchScreen.storyboard in Resources */,
 				8DAAB210248CB32E000FA67C /* PlayfairDisplay-ExtraBold.ttf in Resources */,
+				8D3E1E3F24A8839400068EE2 /* TaskViewController.xib in Resources */,
 				8D77E9C524908DC6009A7D39 /* RewardTableViewCell.xib in Resources */,
 				8DAAB216248CB32E000FA67C /* PlayfairDisplay-SemiBoldItalic.ttf in Resources */,
 				8DAAB212248CB32E000FA67C /* PlayfairDisplay-Medium.ttf in Resources */,
@@ -306,6 +335,7 @@
 				8DAAB215248CB32E000FA67C /* PlayfairDisplay-Regular.ttf in Resources */,
 				8DAAB218248CB32E000FA67C /* PlayfairDisplay-SemiBold.ttf in Resources */,
 				8DAAB213248CB32E000FA67C /* PlayfairDisplay-MediumItalic.ttf in Resources */,
+				8D3E1E3924A8417C00068EE2 /* ArticleViewController.xib in Resources */,
 				8DB1EA6A24854146005D169F /* Main.storyboard in Resources */,
 				8D286D4624928F720074F8C8 /* ChallengeTableViewCell.xib in Resources */,
 				8D250EA1248CCAC700DA4446 /* ArticleCollectionViewCell.xib in Resources */,
@@ -326,6 +356,7 @@
 				8D250E9C248CC8F100DA4446 /* NotificationViewController.swift in Sources */,
 				8D77E9C424908DC6009A7D39 /* RewardTableViewCell.swift in Sources */,
 				8D250EA0248CCAC700DA4446 /* ArticleCollectionViewCell.swift in Sources */,
+				8D3E1E3E24A8839400068EE2 /* TaskViewController.swift in Sources */,
 				8D250EA4248CD1F100DA4446 /* Article.swift in Sources */,
 				8DB1EA6724854146005D169F /* LoginViewController.swift in Sources */,
 				8DB1EA6524854146005D169F /* HomeViewController.swift in Sources */,
@@ -333,6 +364,7 @@
 				8D286D4524928F720074F8C8 /* ChallengeTableViewCell.swift in Sources */,
 				8DB1EA6124854146005D169F /* AppDelegate.swift in Sources */,
 				8D7AF882248CE5E1001E66AB /* Rewards.swift in Sources */,
+				8D3E1E3824A8417C00068EE2 /* ArticleViewController.swift in Sources */,
 				8D7AF880248CE440001E66AB /* Notification.swift in Sources */,
 				8D286D48249294040074F8C8 /* Challenge.swift in Sources */,
 				8DAAB196248CAE7B000FA67C /* ChallengeViewController.swift in Sources */,
