@@ -225,7 +225,7 @@
             </objects>
             <point key="canvasLocation" x="-2746" y="267"/>
         </scene>
-        <!--Challenges-->
+        <!--Challenge View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ChallengeViewController" customModule="DiceToDive" customModuleProvider="target" sceneMemberID="viewController">
@@ -234,13 +234,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Challenges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tg9-zL-4Iq">
-                                <rect key="frame" x="24" y="74" width="366" height="48"/>
+                                <rect key="frame" x="24" y="118" width="366" height="48"/>
                                 <fontDescription key="fontDescription" name="PlayfairDisplay-Black" family="Playfair Display" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oSE-i4-DfC">
-                                <rect key="frame" x="8" y="146" width="398" height="667"/>
+                                <rect key="frame" x="8" y="190" width="398" height="623"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -256,14 +256,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Challenges" image="book" catalog="system" selectedImage="book.fill" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" id="o7h-CY-rFS"/>
                     <connections>
                         <outlet property="tableView" destination="oSE-i4-DfC" id="w7l-PJ-Xj8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1813" y="-437"/>
+            <point key="canvasLocation" x="-1813" y="267"/>
         </scene>
         <!--Rewards-->
         <scene sceneID="DU7-RG-Ter">
@@ -303,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zlJ-K9-Zha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-913" y="-437"/>
+            <point key="canvasLocation" x="-2.8985507246376816" y="-437.27678571428572"/>
         </scene>
         <!--Notifications-->
         <scene sceneID="bGH-aq-Qhm">
@@ -343,7 +343,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="alI-xH-1st" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30" y="-437"/>
+            <point key="canvasLocation" x="879.71014492753625" y="-437.27678571428572"/>
         </scene>
         <!--Me-->
         <scene sceneID="sby-Lp-HO1">
@@ -359,7 +359,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mxj-QI-PSn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="-437"/>
+            <point key="canvasLocation" x="1779.7101449275365" y="-437.27678571428572"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -373,7 +373,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="fbx-zc-Sqz" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="bFb-G6-W7s" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="wX9-le-xRX" kind="relationship" relationship="viewControllers" id="uSY-Q7-bzE"/>
                         <segue destination="vUh-8z-Jiv" kind="relationship" relationship="viewControllers" id="M5U-VU-L6c"/>
                         <segue destination="Eco-tH-a8P" kind="relationship" relationship="viewControllers" id="Jg5-W9-EH6"/>
@@ -401,6 +401,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Wk-Ff-AvG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2746.376811594203" y="-437.27678571428572"/>
+        </scene>
+        <!--Challenges-->
+        <scene sceneID="QSO-PM-9re">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bFb-G6-W7s" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Challenges" image="book" catalog="system" selectedImage="book.fill" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cOu-wp-wOd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="NO8-Ey-fqA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wjy-11-diO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1813.0434782608697" y="-437.27678571428572"/>
         </scene>
     </scenes>
     <resources>

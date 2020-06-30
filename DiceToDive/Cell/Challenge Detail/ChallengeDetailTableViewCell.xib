@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChallengeDetailTableViewCell" rowHeight="60" id="KGk-i7-Jjw" customClass="ChallengeDetailTableViewCell" customModule="DiceToDive" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHp-TA-Dzh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="56.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XJ-I3-oph">
+                                <rect key="frame" x="52" y="18" width="252" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pCi-lt-ESb">
+                                <rect key="frame" x="16" y="18.5" width="20" height="19"/>
+                                <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="vLX-L9-nUK"/>
+                                    <constraint firstAttribute="height" constant="20" id="xHv-DI-Xcf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4XJ-I3-oph" firstAttribute="leading" secondItem="pCi-lt-ESb" secondAttribute="trailing" constant="16" id="GTd-lJ-6Xx"/>
+                            <constraint firstItem="pCi-lt-ESb" firstAttribute="top" secondItem="aHp-TA-Dzh" secondAttribute="top" constant="18" id="Obz-7Q-v1L"/>
+                            <constraint firstItem="pCi-lt-ESb" firstAttribute="leading" secondItem="aHp-TA-Dzh" secondAttribute="leading" constant="16" id="P7H-1K-AN0"/>
+                            <constraint firstAttribute="bottom" secondItem="4XJ-I3-oph" secondAttribute="bottom" constant="18" id="Z4O-kf-TIb"/>
+                            <constraint firstAttribute="bottom" secondItem="pCi-lt-ESb" secondAttribute="bottom" constant="18" id="faj-6g-TPy"/>
+                            <constraint firstAttribute="trailing" secondItem="4XJ-I3-oph" secondAttribute="trailing" constant="16" id="mZ9-7p-KDc"/>
+                            <constraint firstItem="4XJ-I3-oph" firstAttribute="top" secondItem="aHp-TA-Dzh" secondAttribute="top" constant="18" id="mzL-HV-6wU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="aHp-TA-Dzh" secondAttribute="bottom" id="Ktb-fP-sB2"/>
+                    <constraint firstItem="aHp-TA-Dzh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MX6-UB-18z"/>
+                    <constraint firstAttribute="trailing" secondItem="aHp-TA-Dzh" secondAttribute="trailing" id="d5f-Qh-Pun"/>
+                    <constraint firstItem="aHp-TA-Dzh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xWt-c9-IX3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imvMark" destination="pCi-lt-ESb" id="0tc-Oj-cak"/>
+                <outlet property="lblTitle" destination="4XJ-I3-oph" id="hrM-XJ-yLo"/>
+                <outlet property="vwContainer" destination="aHp-TA-Dzh" id="pcd-nv-hwS"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="157.36607142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

@@ -38,6 +38,12 @@ class ChallengeViewController: UIViewController {
         tableView.register(UINib(nibName: "ChallengeTableViewCell", bundle: nil), forCellReuseIdentifier: "ChallengeTableViewCell")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        tabBarController?.tabBar.isHidden = false
+    }
+    
 }
 
 extension ChallengeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -67,5 +73,12 @@ extension ChallengeViewController: UITableViewDelegate, UITableViewDataSource {
             
             self.present(alert, animated: true)
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC = ChallengeDetailViewController(nibName: "ChallengeDetailViewController", bundle: nil)
+        detailVC.objectives = challenges[indexPath.row].objectives
+        detailVC.configTitle(title: challenges[indexPath.row].title)
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }

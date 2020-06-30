@@ -18,8 +18,10 @@
 		8D286D4A249294980074F8C8 /* Objective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D286D49249294980074F8C8 /* Objective.swift */; };
 		8D3E1E3824A8417C00068EE2 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E1E3624A8417C00068EE2 /* ArticleViewController.swift */; };
 		8D3E1E3924A8417C00068EE2 /* ArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3E1E3724A8417C00068EE2 /* ArticleViewController.xib */; };
-		8D3E1E3E24A8839400068EE2 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E1E3C24A8839400068EE2 /* TaskViewController.swift */; };
-		8D3E1E3F24A8839400068EE2 /* TaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3E1E3D24A8839400068EE2 /* TaskViewController.xib */; };
+		8D3E1E4324A8873200068EE2 /* ChallengeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E1E4124A8873200068EE2 /* ChallengeDetailViewController.swift */; };
+		8D3E1E4424A8873200068EE2 /* ChallengeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3E1E4224A8873200068EE2 /* ChallengeDetailViewController.xib */; };
+		8D3E1E4824A887A600068EE2 /* ChallengeDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E1E4624A887A600068EE2 /* ChallengeDetailTableViewCell.swift */; };
+		8D3E1E4924A887A600068EE2 /* ChallengeDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3E1E4724A887A600068EE2 /* ChallengeDetailTableViewCell.xib */; };
 		8D77E9C424908DC6009A7D39 /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77E9C224908DC6009A7D39 /* RewardTableViewCell.swift */; };
 		8D77E9C524908DC6009A7D39 /* RewardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D77E9C324908DC6009A7D39 /* RewardTableViewCell.xib */; };
 		8D7AF880248CE440001E66AB /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7AF87F248CE440001E66AB /* Notification.swift */; };
@@ -62,8 +64,10 @@
 		8D286D49249294980074F8C8 /* Objective.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objective.swift; sourceTree = "<group>"; };
 		8D3E1E3624A8417C00068EE2 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		8D3E1E3724A8417C00068EE2 /* ArticleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleViewController.xib; sourceTree = "<group>"; };
-		8D3E1E3C24A8839400068EE2 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
-		8D3E1E3D24A8839400068EE2 /* TaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskViewController.xib; sourceTree = "<group>"; };
+		8D3E1E4124A8873200068EE2 /* ChallengeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailViewController.swift; sourceTree = "<group>"; };
+		8D3E1E4224A8873200068EE2 /* ChallengeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengeDetailViewController.xib; sourceTree = "<group>"; };
+		8D3E1E4624A887A600068EE2 /* ChallengeDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailTableViewCell.swift; sourceTree = "<group>"; };
+		8D3E1E4724A887A600068EE2 /* ChallengeDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengeDetailTableViewCell.xib; sourceTree = "<group>"; };
 		8D77E9C224908DC6009A7D39 /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		8D77E9C324908DC6009A7D39 /* RewardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardTableViewCell.xib; sourceTree = "<group>"; };
 		8D7AF87F248CE440001E66AB /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 		8D250E9D248CCA8F00DA4446 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				8D3E1E4524A8878B00068EE2 /* Challenge Detail */,
 				8D286D4224928F520074F8C8 /* Challenge */,
 				8D77E9C124908D98009A7D39 /* Reward */,
 				8D7AF87E248CE3E5001E66AB /* Notification */,
@@ -148,13 +153,22 @@
 			path = Article;
 			sourceTree = "<group>";
 		};
-		8D3E1E3B24A8832D00068EE2 /* Task */ = {
+		8D3E1E4024A8871B00068EE2 /* Challenge Detail */ = {
 			isa = PBXGroup;
 			children = (
-				8D3E1E3C24A8839400068EE2 /* TaskViewController.swift */,
-				8D3E1E3D24A8839400068EE2 /* TaskViewController.xib */,
+				8D3E1E4124A8873200068EE2 /* ChallengeDetailViewController.swift */,
+				8D3E1E4224A8873200068EE2 /* ChallengeDetailViewController.xib */,
 			);
-			path = Task;
+			path = "Challenge Detail";
+			sourceTree = "<group>";
+		};
+		8D3E1E4524A8878B00068EE2 /* Challenge Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8D3E1E4624A887A600068EE2 /* ChallengeDetailTableViewCell.swift */,
+				8D3E1E4724A887A600068EE2 /* ChallengeDetailTableViewCell.xib */,
+			);
+			path = "Challenge Detail";
 			sourceTree = "<group>";
 		};
 		8D77E9C124908D98009A7D39 /* Reward */ = {
@@ -193,7 +207,7 @@
 				8DAAB197248CAE8C000FA67C /* MeViewController.swift */,
 				8DB1EA6624854146005D169F /* LoginViewController.swift */,
 				8D250E9B248CC8F100DA4446 /* NotificationViewController.swift */,
-				8D3E1E3B24A8832D00068EE2 /* Task */,
+				8D3E1E4024A8871B00068EE2 /* Challenge Detail */,
 				8D3E1E3A24A8418100068EE2 /* Article */,
 			);
 			path = Controller;
@@ -321,9 +335,9 @@
 				8D250E9A248CBACC00DA4446 /* .gitignore in Resources */,
 				8DB1EA6F24854148005D169F /* LaunchScreen.storyboard in Resources */,
 				8DAAB210248CB32E000FA67C /* PlayfairDisplay-ExtraBold.ttf in Resources */,
-				8D3E1E3F24A8839400068EE2 /* TaskViewController.xib in Resources */,
 				8D77E9C524908DC6009A7D39 /* RewardTableViewCell.xib in Resources */,
 				8DAAB216248CB32E000FA67C /* PlayfairDisplay-SemiBoldItalic.ttf in Resources */,
+				8D3E1E4924A887A600068EE2 /* ChallengeDetailTableViewCell.xib in Resources */,
 				8DAAB212248CB32E000FA67C /* PlayfairDisplay-Medium.ttf in Resources */,
 				8DAAB20E248CB32E000FA67C /* PlayfairDisplay-Black.ttf in Resources */,
 				8DB1EA6C24854148005D169F /* Assets.xcassets in Resources */,
@@ -334,6 +348,7 @@
 				8DAAB20F248CB32E000FA67C /* PlayfairDisplay-Bold.ttf in Resources */,
 				8DAAB215248CB32E000FA67C /* PlayfairDisplay-Regular.ttf in Resources */,
 				8DAAB218248CB32E000FA67C /* PlayfairDisplay-SemiBold.ttf in Resources */,
+				8D3E1E4424A8873200068EE2 /* ChallengeDetailViewController.xib in Resources */,
 				8DAAB213248CB32E000FA67C /* PlayfairDisplay-MediumItalic.ttf in Resources */,
 				8D3E1E3924A8417C00068EE2 /* ArticleViewController.xib in Resources */,
 				8DB1EA6A24854146005D169F /* Main.storyboard in Resources */,
@@ -352,13 +367,14 @@
 			files = (
 				8DAAB192248CADE2000FA67C /* RewardViewController.swift in Sources */,
 				8DAAB198248CAE8C000FA67C /* MeViewController.swift in Sources */,
+				8D3E1E4824A887A600068EE2 /* ChallengeDetailTableViewCell.swift in Sources */,
 				8D7AF885248CEF79001E66AB /* NotificationTableViewCell.swift in Sources */,
 				8D250E9C248CC8F100DA4446 /* NotificationViewController.swift in Sources */,
 				8D77E9C424908DC6009A7D39 /* RewardTableViewCell.swift in Sources */,
 				8D250EA0248CCAC700DA4446 /* ArticleCollectionViewCell.swift in Sources */,
-				8D3E1E3E24A8839400068EE2 /* TaskViewController.swift in Sources */,
 				8D250EA4248CD1F100DA4446 /* Article.swift in Sources */,
 				8DB1EA6724854146005D169F /* LoginViewController.swift in Sources */,
+				8D3E1E4324A8873200068EE2 /* ChallengeDetailViewController.swift in Sources */,
 				8DB1EA6524854146005D169F /* HomeViewController.swift in Sources */,
 				8D286D4A249294980074F8C8 /* Objective.swift in Sources */,
 				8D286D4524928F720074F8C8 /* ChallengeTableViewCell.swift in Sources */,
