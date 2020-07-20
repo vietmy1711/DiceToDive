@@ -16,17 +16,20 @@ class ChallengeViewController: UIViewController {
         Challenge(title: "Explore Ben Thanh Market", description: "Considered one of the most reconigzable of Ho Chi Minh City, it will be such a waste of you don't drop by. Check this now!", objectives: [
             Objective(title: "Pass by Ben Thanh Terminal", status: true),
             Objective(title: "Enter via Ben Thanh's West Door", status: false),
-            Objective(title: "Take a picture of Ben Thanh's front", status: false)
+            Objective(title: "Take a picture of Ben Thanh's front", status: false),
+            Objective(title: "Collect 32 points and a cool reward", status: false)
         ]),
         Challenge(title: "Healthy Challenge", description: "Yes, we do want to keep you fit, energetic and healthy. Go out, have a walk. Ouh ouh, and remember to stay hydrated", objectives: [
-            Objective(title: "Pass by Ben Thanh Terminal", status: true),
-            Objective(title: "Enter via Ben Thanh's West Door", status: true),
-            Objective(title: "Take a picture of Ben Thanh's front", status: false)
+            Objective(title: "Walk 500 meters. (500/500)", status: true),
+            Objective(title: "Step 1000 footsteps. (1000/1000)", status: true),
+            Objective(title: "Burn 400 calories today. (312/400)", status: false),
+            Objective(title: "Collect 50 points", status: false)
         ]),
         Challenge(title: "Coffee Lover", description: "If you're a coffee lover, we have set a list of coffee shop for you to visit. Give them a try, maybe you'll like them. Vietnamese coffee is the best - they said.", objectives: [
-            Objective(title: "Pass by Ben Thanh Terminal", status: true),
-            Objective(title: "Enter via Ben Thanh's West Door", status: true),
-            Objective(title: "Take a picture of Ben Thanh's front", status: false)
+            Objective(title: "Drop by The Coffee House Calmette", status: true),
+            Objective(title: "Purchase 1 traditional Coffee", status: true),
+            Objective(title: "Enjoy the coffee", status: false),
+            Objective(title: "Collect 32 points and a cool reward", status: false)
         ])
     ]
     

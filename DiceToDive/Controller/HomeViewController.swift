@@ -69,6 +69,8 @@ class HomeViewController: UIViewController {
     @objc func rewardTapped() {
         tabBarController?.selectedIndex = 2
     }
+    @IBAction func startBtnTapped(_ sender: UIButton) {
+    }
 }
 
 

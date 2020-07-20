@@ -50,6 +50,8 @@
 		8DB1EA6A24854146005D169F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB1EA6824854146005D169F /* Main.storyboard */; };
 		8DB1EA6C24854148005D169F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB1EA6B24854148005D169F /* Assets.xcassets */; };
 		8DB1EA6F24854148005D169F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB1EA6D24854148005D169F /* LaunchScreen.storyboard */; };
+		8DDDB03724AB17AF0045F629 /* BarCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDDB03524AB17AF0045F629 /* BarCodeViewController.swift */; };
+		8DDDB03824AB17AF0045F629 /* BarCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DDDB03624AB17AF0045F629 /* BarCodeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +100,8 @@
 		8DB1EA6B24854148005D169F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DB1EA6E24854148005D169F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DB1EA7024854148005D169F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DDDB03524AB17AF0045F629 /* BarCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeViewController.swift; sourceTree = "<group>"; };
+		8DDDB03624AB17AF0045F629 /* BarCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarCodeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,7 @@
 				8DB1EA6624854146005D169F /* LoginViewController.swift */,
 				8D250E9B248CC8F100DA4446 /* NotificationViewController.swift */,
 				8D3E1E4024A8871B00068EE2 /* Challenge Detail */,
+				8DDDB03424AB17950045F629 /* Bar Code */,
 				8D3E1E3A24A8418100068EE2 /* Article */,
 			);
 			path = Controller;
@@ -272,6 +277,15 @@
 				8DB1EA7024854148005D169F /* Info.plist */,
 			);
 			path = DiceToDive;
+			sourceTree = "<group>";
+		};
+		8DDDB03424AB17950045F629 /* Bar Code */ = {
+			isa = PBXGroup;
+			children = (
+				8DDDB03524AB17AF0045F629 /* BarCodeViewController.swift */,
+				8DDDB03624AB17AF0045F629 /* BarCodeViewController.xib */,
+			);
+			path = "Bar Code";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +355,7 @@
 				8DAAB212248CB32E000FA67C /* PlayfairDisplay-Medium.ttf in Resources */,
 				8DAAB20E248CB32E000FA67C /* PlayfairDisplay-Black.ttf in Resources */,
 				8DB1EA6C24854148005D169F /* Assets.xcassets in Resources */,
+				8DDDB03824AB17AF0045F629 /* BarCodeViewController.xib in Resources */,
 				8DAAB214248CB32E000FA67C /* PlayfairDisplay-Italic.ttf in Resources */,
 				8D7AF886248CEF79001E66AB /* NotificationTableViewCell.xib in Resources */,
 				8DAAB219248CB32E000FA67C /* PlayfairDisplay-BoldItalic.ttf in Resources */,
@@ -371,6 +386,7 @@
 				8D7AF885248CEF79001E66AB /* NotificationTableViewCell.swift in Sources */,
 				8D250E9C248CC8F100DA4446 /* NotificationViewController.swift in Sources */,
 				8D77E9C424908DC6009A7D39 /* RewardTableViewCell.swift in Sources */,
+				8DDDB03724AB17AF0045F629 /* BarCodeViewController.swift in Sources */,
 				8D250EA0248CCAC700DA4446 /* ArticleCollectionViewCell.swift in Sources */,
 				8D250EA4248CD1F100DA4446 /* Article.swift in Sources */,
 				8DB1EA6724854146005D169F /* LoginViewController.swift in Sources */,

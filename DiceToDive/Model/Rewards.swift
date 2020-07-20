@@ -13,6 +13,6 @@ struct Reward {
     let title: String
     let detail: String
     let expirationDate: String
-    let qrCode: String
+    let barCode: String
 
 }

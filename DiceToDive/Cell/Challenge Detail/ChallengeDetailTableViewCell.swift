@@ -19,6 +19,11 @@ class ChallengeDetailTableViewCell: UITableViewCell {
         // Initialization code
         setupCell()
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        lblTitle.text = ""
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

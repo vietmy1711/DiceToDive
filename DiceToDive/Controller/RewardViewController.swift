@@ -13,10 +13,10 @@ class RewardViewController: UIViewController{
     @IBOutlet weak var tableView: UITableView!
     
     var rewards = [
-        Reward(img: #imageLiteral(resourceName: "img_gongcha"), title: "Free one topping at Gong Cha", detail: "Lorem ipsum", expirationDate: "30/4/1975", qrCode: "bfuYVUYVfqnsjduibYVDq"),
-        Reward(img: #imageLiteral(resourceName: "img_hotpotstory"), title: "Discount 10% at HotPot Story", detail: "Lorem ipsum", expirationDate: "30/4/1975", qrCode: "ugYYfBIUFBqfASdiaodiad"),
-        Reward(img: #imageLiteral(resourceName: "img_gogihouse"), title: "Discount 15% at GoGi House Van Hanh Mall", detail: "Lorem ipsum", expirationDate: "30/4/1975", qrCode: "nJUBNViuwbfUIBbqefqu"),
-        Reward(img: #imageLiteral(resourceName: "img_ananas"), title: "A pair of socks at Ananas", detail: "Lorem ipsum", expirationDate: "30/4/1975", qrCode: "fnqjfbYBYfqfqufbqi")
+        Reward(img: #imageLiteral(resourceName: "img_gongcha"), title: "Free one topping at Gong Cha", detail: "Lorem ipsum", expirationDate: "30/7/2020", barCode: "bfuYVUYVfqnsjduibYVDq"),
+        Reward(img: #imageLiteral(resourceName: "img_hotpotstory"), title: "Discount 10% at HotPot Story", detail: "Lorem ipsum", expirationDate: "12/9/2020", barCode: "ugYYfBIUFBqfASdiaodiad"),
+        Reward(img: #imageLiteral(resourceName: "img_gogihouse"), title: "Discount 15% at GoGi House Van Hanh Mall", detail: "Lorem ipsum", expirationDate: "17/7/2020", barCode: "nJUBNViuwbfUIBbqefqu"),
+        Reward(img: #imageLiteral(resourceName: "img_ananas"), title: "A pair of socks at Ananas", detail: "Thank you for your trust, keeping things unique and inspirating. Please come to the nearest outlet to collect your reward.", expirationDate: "17/7/2020", barCode: "fnqjfbYBYfqfqufbqi")
     ]
     
     override func viewDidLoad() {
@@ -30,23 +30,6 @@ class RewardViewController: UIViewController{
         tableView.dataSource = self
         tableView.register(UINib(nibName: "RewardTableViewCell", bundle: nil), forCellReuseIdentifier: "RewardTableViewCell")
     }
-
-
-    func generateQRCode(from string: String) -> UIImage? {
-        let data = string.data(using: String.Encoding.ascii)
-
-        if let filter = CIFilter(name: "CIQRCodeGenerator") {
-            filter.setValue(data, forKey: "inputMessage")
-            let transform = CGAffineTransform(scaleX: 3, y: 3)
-
-            if let output = filter.outputImage?.transformed(by: transform) {
-                return UIImage(ciImage: output)
-            }
-        }
-
-        return nil
-    }
-    
 }
 
 
@@ -62,5 +45,9 @@ extension RewardViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let barCodeVC = BarCodeViewController(nibName: "BarCodeViewController", bundle: nil)
+        barCodeVC.configWithReward(reward: rewards[indexPath.row])
+        self.present(barCodeVC, animated: true, completion: nil)
+    }
 }
