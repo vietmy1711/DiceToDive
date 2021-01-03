@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,9 @@
 		8D3E1E4424A8873200068EE2 /* ChallengeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3E1E4224A8873200068EE2 /* ChallengeDetailViewController.xib */; };
 		8D3E1E4824A887A600068EE2 /* ChallengeDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E1E4624A887A600068EE2 /* ChallengeDetailTableViewCell.swift */; };
 		8D3E1E4924A887A600068EE2 /* ChallengeDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3E1E4724A887A600068EE2 /* ChallengeDetailTableViewCell.xib */; };
+		8D737D2525A1A05400AB0E16 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D737D2325A1A05400AB0E16 /* MapViewController.swift */; };
+		8D737D2625A1A05400AB0E16 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D737D2425A1A05400AB0E16 /* MapViewController.xib */; };
+		8D737D2925A1A0E500AB0E16 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D737D2825A1A0E500AB0E16 /* APIKey.swift */; };
 		8D77E9C424908DC6009A7D39 /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77E9C224908DC6009A7D39 /* RewardTableViewCell.swift */; };
 		8D77E9C524908DC6009A7D39 /* RewardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D77E9C324908DC6009A7D39 /* RewardTableViewCell.xib */; };
 		8D7AF880248CE440001E66AB /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7AF87F248CE440001E66AB /* Notification.swift */; };
@@ -52,9 +55,11 @@
 		8DB1EA6F24854148005D169F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB1EA6D24854148005D169F /* LaunchScreen.storyboard */; };
 		8DDDB03724AB17AF0045F629 /* BarCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDDB03524AB17AF0045F629 /* BarCodeViewController.swift */; };
 		8DDDB03824AB17AF0045F629 /* BarCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DDDB03624AB17AF0045F629 /* BarCodeViewController.xib */; };
+		A27B217F6086A24792070469 /* Pods_DiceToDive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B285E220D0004077A1642AE5 /* Pods_DiceToDive.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1003C6C27528AF7247C7CDD0 /* Pods-DiceToDive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceToDive.debug.xcconfig"; path = "Target Support Files/Pods-DiceToDive/Pods-DiceToDive.debug.xcconfig"; sourceTree = "<group>"; };
 		8D250E99248CBACC00DA4446 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8D250E9B248CC8F100DA4446 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		8D250E9E248CCAC700DA4446 /* ArticleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -70,6 +75,9 @@
 		8D3E1E4224A8873200068EE2 /* ChallengeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengeDetailViewController.xib; sourceTree = "<group>"; };
 		8D3E1E4624A887A600068EE2 /* ChallengeDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailTableViewCell.swift; sourceTree = "<group>"; };
 		8D3E1E4724A887A600068EE2 /* ChallengeDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengeDetailTableViewCell.xib; sourceTree = "<group>"; };
+		8D737D2325A1A05400AB0E16 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8D737D2425A1A05400AB0E16 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		8D737D2825A1A0E500AB0E16 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		8D77E9C224908DC6009A7D39 /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		8D77E9C324908DC6009A7D39 /* RewardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardTableViewCell.xib; sourceTree = "<group>"; };
 		8D7AF87F248CE440001E66AB /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
@@ -102,6 +110,8 @@
 		8DB1EA7024854148005D169F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DDDB03524AB17AF0045F629 /* BarCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeViewController.swift; sourceTree = "<group>"; };
 		8DDDB03624AB17AF0045F629 /* BarCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarCodeViewController.xib; sourceTree = "<group>"; };
+		B285E220D0004077A1642AE5 /* Pods_DiceToDive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiceToDive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3359FCDE2E3640F8EE6CDE9 /* Pods-DiceToDive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceToDive.release.xcconfig"; path = "Target Support Files/Pods-DiceToDive/Pods-DiceToDive.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +119,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A27B217F6086A24792070469 /* Pods_DiceToDive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5665E3E1E7AC282D544A3D28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B285E220D0004077A1642AE5 /* Pods_DiceToDive.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B806A92BFCD8909E942B6AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1003C6C27528AF7247C7CDD0 /* Pods-DiceToDive.debug.xcconfig */,
+				B3359FCDE2E3640F8EE6CDE9 /* Pods-DiceToDive.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8D250E9D248CCA8F00DA4446 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +163,7 @@
 				8D7AF881248CE5E1001E66AB /* Rewards.swift */,
 				8D286D47249294040074F8C8 /* Challenge.swift */,
 				8D286D49249294980074F8C8 /* Objective.swift */,
+				8D737D2825A1A0E500AB0E16 /* APIKey.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +204,15 @@
 			path = "Challenge Detail";
 			sourceTree = "<group>";
 		};
+		8D737D1E25A19C2700AB0E16 /* Map View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D737D2325A1A05400AB0E16 /* MapViewController.swift */,
+				8D737D2425A1A05400AB0E16 /* MapViewController.xib */,
+			);
+			path = "Map View Controller";
+			sourceTree = "<group>";
+		};
 		8D77E9C124908D98009A7D39 /* Reward */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +249,7 @@
 				8DAAB197248CAE8C000FA67C /* MeViewController.swift */,
 				8DB1EA6624854146005D169F /* LoginViewController.swift */,
 				8D250E9B248CC8F100DA4446 /* NotificationViewController.swift */,
+				8D737D1E25A19C2700AB0E16 /* Map View Controller */,
 				8D3E1E4024A8871B00068EE2 /* Challenge Detail */,
 				8DDDB03424AB17950045F629 /* Bar Code */,
 				8D3E1E3A24A8418100068EE2 /* Article */,
@@ -251,6 +290,8 @@
 				8D250E99248CBACC00DA4446 /* .gitignore */,
 				8DB1EA5F24854146005D169F /* DiceToDive */,
 				8DB1EA5E24854146005D169F /* Products */,
+				6B806A92BFCD8909E942B6AD /* Pods */,
+				5665E3E1E7AC282D544A3D28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -295,9 +336,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DB1EA7324854148005D169F /* Build configuration list for PBXNativeTarget "DiceToDive" */;
 			buildPhases = (
+				C73BC87734D5A211D207C0BB /* [CP] Check Pods Manifest.lock */,
 				8DB1EA5924854146005D169F /* Sources */,
 				8DB1EA5A24854146005D169F /* Frameworks */,
 				8DB1EA5B24854146005D169F /* Resources */,
+				579CB59A34EB2C1917AA8DAE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -359,6 +402,7 @@
 				8DAAB214248CB32E000FA67C /* PlayfairDisplay-Italic.ttf in Resources */,
 				8D7AF886248CEF79001E66AB /* NotificationTableViewCell.xib in Resources */,
 				8DAAB219248CB32E000FA67C /* PlayfairDisplay-BoldItalic.ttf in Resources */,
+				8D737D2625A1A05400AB0E16 /* MapViewController.xib in Resources */,
 				8DAAB217248CB32E000FA67C /* PlayfairDisplay-ExtraBoldItalic.ttf in Resources */,
 				8DAAB20F248CB32E000FA67C /* PlayfairDisplay-Bold.ttf in Resources */,
 				8DAAB215248CB32E000FA67C /* PlayfairDisplay-Regular.ttf in Resources */,
@@ -375,6 +419,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		579CB59A34EB2C1917AA8DAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiceToDive/Pods-DiceToDive-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiceToDive/Pods-DiceToDive-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiceToDive/Pods-DiceToDive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C73BC87734D5A211D207C0BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiceToDive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8DB1EA5924854146005D169F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -382,6 +468,7 @@
 			files = (
 				8DAAB192248CADE2000FA67C /* RewardViewController.swift in Sources */,
 				8DAAB198248CAE8C000FA67C /* MeViewController.swift in Sources */,
+				8D737D2925A1A0E500AB0E16 /* APIKey.swift in Sources */,
 				8D3E1E4824A887A600068EE2 /* ChallengeDetailTableViewCell.swift in Sources */,
 				8D7AF885248CEF79001E66AB /* NotificationTableViewCell.swift in Sources */,
 				8D250E9C248CC8F100DA4446 /* NotificationViewController.swift in Sources */,
@@ -391,6 +478,7 @@
 				8D250EA4248CD1F100DA4446 /* Article.swift in Sources */,
 				8DB1EA6724854146005D169F /* LoginViewController.swift in Sources */,
 				8D3E1E4324A8873200068EE2 /* ChallengeDetailViewController.swift in Sources */,
+				8D737D2525A1A05400AB0E16 /* MapViewController.swift in Sources */,
 				8DB1EA6524854146005D169F /* HomeViewController.swift in Sources */,
 				8D286D4A249294980074F8C8 /* Objective.swift in Sources */,
 				8D286D4524928F720074F8C8 /* ChallengeTableViewCell.swift in Sources */,
@@ -542,6 +630,7 @@
 		};
 		8DB1EA7424854148005D169F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1003C6C27528AF7247C7CDD0 /* Pods-DiceToDive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -560,6 +649,7 @@
 		};
 		8DB1EA7524854148005D169F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3359FCDE2E3640F8EE6CDE9 /* Pods-DiceToDive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

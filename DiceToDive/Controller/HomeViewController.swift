@@ -70,6 +70,9 @@ class HomeViewController: UIViewController {
         tabBarController?.selectedIndex = 2
     }
     @IBAction func startBtnTapped(_ sender: UIButton) {
+        let mapVC = MapViewController()
+        self.present(mapVC, animated: true, completion: nil)
+//        self.navigationController?.pushViewController(mapVC, animated: true)
     }
 }
 
