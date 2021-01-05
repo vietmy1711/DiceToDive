@@ -22,9 +22,12 @@
 		8D3E1E4424A8873200068EE2 /* ChallengeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3E1E4224A8873200068EE2 /* ChallengeDetailViewController.xib */; };
 		8D3E1E4824A887A600068EE2 /* ChallengeDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E1E4624A887A600068EE2 /* ChallengeDetailTableViewCell.swift */; };
 		8D3E1E4924A887A600068EE2 /* ChallengeDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3E1E4724A887A600068EE2 /* ChallengeDetailTableViewCell.xib */; };
+		8D6B435125A309E90027305F /* NewArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B434F25A309E90027305F /* NewArticleCollectionViewCell.swift */; };
+		8D6B435225A309E90027305F /* NewArticleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D6B435025A309E90027305F /* NewArticleCollectionViewCell.xib */; };
 		8D737D2525A1A05400AB0E16 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D737D2325A1A05400AB0E16 /* MapViewController.swift */; };
 		8D737D2625A1A05400AB0E16 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D737D2425A1A05400AB0E16 /* MapViewController.xib */; };
 		8D737D2925A1A0E500AB0E16 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D737D2825A1A0E500AB0E16 /* APIKey.swift */; };
+		8D737D2C25A1B31400AB0E16 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D737D2B25A1B31400AB0E16 /* Place.swift */; };
 		8D77E9C424908DC6009A7D39 /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77E9C224908DC6009A7D39 /* RewardTableViewCell.swift */; };
 		8D77E9C524908DC6009A7D39 /* RewardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D77E9C324908DC6009A7D39 /* RewardTableViewCell.xib */; };
 		8D7AF880248CE440001E66AB /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7AF87F248CE440001E66AB /* Notification.swift */; };
@@ -75,9 +78,12 @@
 		8D3E1E4224A8873200068EE2 /* ChallengeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengeDetailViewController.xib; sourceTree = "<group>"; };
 		8D3E1E4624A887A600068EE2 /* ChallengeDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailTableViewCell.swift; sourceTree = "<group>"; };
 		8D3E1E4724A887A600068EE2 /* ChallengeDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengeDetailTableViewCell.xib; sourceTree = "<group>"; };
+		8D6B434F25A309E90027305F /* NewArticleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewArticleCollectionViewCell.swift; sourceTree = "<group>"; };
+		8D6B435025A309E90027305F /* NewArticleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewArticleCollectionViewCell.xib; sourceTree = "<group>"; };
 		8D737D2325A1A05400AB0E16 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8D737D2425A1A05400AB0E16 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		8D737D2825A1A0E500AB0E16 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		8D737D2B25A1B31400AB0E16 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		8D77E9C224908DC6009A7D39 /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		8D77E9C324908DC6009A7D39 /* RewardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardTableViewCell.xib; sourceTree = "<group>"; };
 		8D7AF87F248CE440001E66AB /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
@@ -146,6 +152,7 @@
 		8D250E9D248CCA8F00DA4446 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				8D6B434E25A309BA0027305F /* Article Redesign */,
 				8D3E1E4524A8878B00068EE2 /* Challenge Detail */,
 				8D286D4224928F520074F8C8 /* Challenge */,
 				8D77E9C124908D98009A7D39 /* Reward */,
@@ -164,6 +171,7 @@
 				8D286D47249294040074F8C8 /* Challenge.swift */,
 				8D286D49249294980074F8C8 /* Objective.swift */,
 				8D737D2825A1A0E500AB0E16 /* APIKey.swift */,
+				8D737D2B25A1B31400AB0E16 /* Place.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,6 +210,15 @@
 				8D3E1E4724A887A600068EE2 /* ChallengeDetailTableViewCell.xib */,
 			);
 			path = "Challenge Detail";
+			sourceTree = "<group>";
+		};
+		8D6B434E25A309BA0027305F /* Article Redesign */ = {
+			isa = PBXGroup;
+			children = (
+				8D6B434F25A309E90027305F /* NewArticleCollectionViewCell.swift */,
+				8D6B435025A309E90027305F /* NewArticleCollectionViewCell.xib */,
+			);
+			path = "Article Redesign";
 			sourceTree = "<group>";
 		};
 		8D737D1E25A19C2700AB0E16 /* Map View Controller */ = {
@@ -403,6 +420,7 @@
 				8D7AF886248CEF79001E66AB /* NotificationTableViewCell.xib in Resources */,
 				8DAAB219248CB32E000FA67C /* PlayfairDisplay-BoldItalic.ttf in Resources */,
 				8D737D2625A1A05400AB0E16 /* MapViewController.xib in Resources */,
+				8D6B435225A309E90027305F /* NewArticleCollectionViewCell.xib in Resources */,
 				8DAAB217248CB32E000FA67C /* PlayfairDisplay-ExtraBoldItalic.ttf in Resources */,
 				8DAAB20F248CB32E000FA67C /* PlayfairDisplay-Bold.ttf in Resources */,
 				8DAAB215248CB32E000FA67C /* PlayfairDisplay-Regular.ttf in Resources */,
@@ -469,6 +487,8 @@
 				8DAAB192248CADE2000FA67C /* RewardViewController.swift in Sources */,
 				8DAAB198248CAE8C000FA67C /* MeViewController.swift in Sources */,
 				8D737D2925A1A0E500AB0E16 /* APIKey.swift in Sources */,
+				8D6B435125A309E90027305F /* NewArticleCollectionViewCell.swift in Sources */,
+				8D737D2C25A1B31400AB0E16 /* Place.swift in Sources */,
 				8D3E1E4824A887A600068EE2 /* ChallengeDetailTableViewCell.swift in Sources */,
 				8D7AF885248CEF79001E66AB /* NotificationTableViewCell.swift in Sources */,
 				8D250E9C248CC8F100DA4446 /* NotificationViewController.swift in Sources */,

@@ -38,7 +38,7 @@ class ChallengeDetailTableViewCell: UITableViewCell {
     func configWithObjective(objective: Objective) {
         lblTitle.text = objective.title
         if objective.status == true {
-            imvMark.tintColor = .systemOrange
+            imvMark.tintColor = UIColor(red: 206/255, green: 173/255, blue: 67/255, alpha: 1)
         } else {
             imvMark.tintColor = .systemGray6
         }
