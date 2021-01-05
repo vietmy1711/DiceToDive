@@ -58,6 +58,8 @@
 		8DB1EA6F24854148005D169F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB1EA6D24854148005D169F /* LaunchScreen.storyboard */; };
 		8DDDB03724AB17AF0045F629 /* BarCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDDB03524AB17AF0045F629 /* BarCodeViewController.swift */; };
 		8DDDB03824AB17AF0045F629 /* BarCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DDDB03624AB17AF0045F629 /* BarCodeViewController.xib */; };
+		8DF6EA2325A41AA6000AE267 /* NewArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF6EA2125A41AA6000AE267 /* NewArticleViewController.swift */; };
+		8DF6EA2425A41AA6000AE267 /* NewArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF6EA2225A41AA6000AE267 /* NewArticleViewController.xib */; };
 		A27B217F6086A24792070469 /* Pods_DiceToDive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B285E220D0004077A1642AE5 /* Pods_DiceToDive.framework */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +118,8 @@
 		8DB1EA7024854148005D169F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DDDB03524AB17AF0045F629 /* BarCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeViewController.swift; sourceTree = "<group>"; };
 		8DDDB03624AB17AF0045F629 /* BarCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarCodeViewController.xib; sourceTree = "<group>"; };
+		8DF6EA2125A41AA6000AE267 /* NewArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewArticleViewController.swift; sourceTree = "<group>"; };
+		8DF6EA2225A41AA6000AE267 /* NewArticleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewArticleViewController.xib; sourceTree = "<group>"; };
 		B285E220D0004077A1642AE5 /* Pods_DiceToDive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiceToDive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3359FCDE2E3640F8EE6CDE9 /* Pods-DiceToDive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceToDive.release.xcconfig"; path = "Target Support Files/Pods-DiceToDive/Pods-DiceToDive.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -260,6 +264,7 @@
 		8DAAB193248CADF2000FA67C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8DF6EA1A25A40A72000AE267 /* Demo Article */,
 				8DB1EA6424854146005D169F /* HomeViewController.swift */,
 				8DAAB195248CAE7B000FA67C /* ChallengeViewController.swift */,
 				8DAAB191248CADE2000FA67C /* RewardViewController.swift */,
@@ -346,6 +351,15 @@
 			path = "Bar Code";
 			sourceTree = "<group>";
 		};
+		8DF6EA1A25A40A72000AE267 /* Demo Article */ = {
+			isa = PBXGroup;
+			children = (
+				8DF6EA2125A41AA6000AE267 /* NewArticleViewController.swift */,
+				8DF6EA2225A41AA6000AE267 /* NewArticleViewController.xib */,
+			);
+			path = "Demo Article";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -408,6 +422,7 @@
 			files = (
 				8D250E9A248CBACC00DA4446 /* .gitignore in Resources */,
 				8DB1EA6F24854148005D169F /* LaunchScreen.storyboard in Resources */,
+				8DF6EA2425A41AA6000AE267 /* NewArticleViewController.xib in Resources */,
 				8DAAB210248CB32E000FA67C /* PlayfairDisplay-ExtraBold.ttf in Resources */,
 				8D77E9C524908DC6009A7D39 /* RewardTableViewCell.xib in Resources */,
 				8DAAB216248CB32E000FA67C /* PlayfairDisplay-SemiBoldItalic.ttf in Resources */,
@@ -507,6 +522,7 @@
 				8D3E1E3824A8417C00068EE2 /* ArticleViewController.swift in Sources */,
 				8D7AF880248CE440001E66AB /* Notification.swift in Sources */,
 				8D286D48249294040074F8C8 /* Challenge.swift in Sources */,
+				8DF6EA2325A41AA6000AE267 /* NewArticleViewController.swift in Sources */,
 				8DAAB196248CAE7B000FA67C /* ChallengeViewController.swift in Sources */,
 				8DB1EA6324854146005D169F /* SceneDelegate.swift in Sources */,
 			);

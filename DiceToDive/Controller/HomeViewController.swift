@@ -25,10 +25,10 @@ class HomeViewController: UIViewController {
     ]
     
     let lifeStyles = [
-        Article(img: #imageLiteral(resourceName: "img_chungcunguyenhue"), title: "\"Tụi mình thôi nha, có người thương em nhiều hơn anh.\"", text: "Khi anh chia tay với bạn gái gần nhất của mình, lúc đó anh cũng không ngờ là 2 đứa phải xa nhau nữa kia, bởi vì đã yêu xa ngay từ đầu rồi mà.", author: "Tao"),
-        Article(img: #imageLiteral(resourceName: "img_buivien"), title: "Dry January là gì?", text: "Dry January /draɪ ˈdʒænjuəri/ (danh từ), hay tháng Một “khô”, là thử thách không bia bọt, rượu chè, các đồ uống có cồn nói chung, vào tháng đầu tiên của năm. Mục đích của người tham gia thường là để giải độc cơ thể sau một mùa lễ hội “ngập ngụa” trong ăn nhậu.", author: "Tao"),
-        Article(img: #imageLiteral(resourceName: "img_hmc"), title: "Cấp độ 2 của tự nhận thức", text: "Bạn có bao giờ cảm thấy muốn phát điên lên, nhưng khi ai đó hỏi tại sao thì phản ứng của bạn là “KHÔNG HỀ! TÔI KHÔNG HỀ TỨC GIẬN! TÔI ỔN! TÔI CHỈ MUỐN ĐẬP VỠ CÁI MÀN HÌNH MÁY TÍNH THÔI!”", author: "Tao"),
-        Article(img: #imageLiteral(resourceName: "img_xienque"), title: "Ai cũng thường có một thần tượng cho riêng mình.", text: """
+        Article(img: #imageLiteral(resourceName: "img_lifestyle1"), title: "\"Tụi mình thôi nha, có người thương em nhiều hơn anh.\"", text: "Khi anh chia tay với bạn gái gần nhất của mình, lúc đó anh cũng không ngờ là 2 đứa phải xa nhau nữa kia, bởi vì đã yêu xa ngay từ đầu rồi mà.", author: "Tao"),
+        Article(img: #imageLiteral(resourceName: "img_lifestyle2"), title: "Bóc Term: Dry January là gì mà Gen Z tích cực ủng hộ?", text: "Dry January /draɪ ˈdʒænjuəri/ (danh từ), hay tháng Một “khô”, là thử thách không bia bọt, rượu chè, các đồ uống có cồn nói chung, vào tháng đầu tiên của năm. Mục đích của người tham gia thường là để giải độc cơ thể sau một mùa lễ hội “ngập ngụa” trong ăn nhậu.", author: "Tao"),
+        Article(img: #imageLiteral(resourceName: "img_lifestyle4"), title: "\"Hơi chậm, nhưng đường còn dài, và em còn trẻ anh ơi.\"", text: "Năm ngoái là năm tệ nhứt trong cuộc đời em: Em làm thêm công việc tài xế lái xe, chở khách lên núi gặp sương mù khách chửi một tràng rồi đòi em trả tiền lại. Người yêu sau 5 năm mặn nồng thì bỏ em đòi đi theo thằng bạn học của em, mà để xát thêm muối vô vết thương thì thằng này siêu giàu, xe đi thì phải Ferrari mới chịu, còn nhà thì ở khu biệt thự của Đài Trung này. Trong khi của cải vật chất thì em không có gì quý tại lúc đó em mê chơi quánh bài quánh bạc, thắng được 3000 đô thì thua cũng hết 3000 đô. Thậm chí 26 tuổi mà vẫn còn ở với mẹ, người ngợm lại xấu xí thừa cân. Gần đây thì mới nghe tin con bồ cũ em chuẩn bị cưới thằng kia luôn rồi.", author: "Tao"),
+        Article(img: #imageLiteral(resourceName: "img_lifestyle3"), title: "Ai cũng thường có một thần tượng cho riêng mình.", text: """
 Từ bé tôi có vài ba thần tượng đặc biệt, như John Lennon, Frederic Chopin, Tuomas Holopainen, Martin Luther King...
                 Nhưng một thời gian sau, khi tôi nhận định rằng mình bắt đầu tiến tiếp ở cái tuổi 20, thì tôi mới thấy người tôi thật sự thần tượng là ông cụ nhà mình
 """, author: "Tao")
@@ -105,6 +105,12 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == lifeStyleCollectionView {
+            let articleVC = NewArticleViewController(nibName: "NewArticleViewController", bundle: nil)
+            articleVC.index = indexPath.row
+            navigationController?.pushViewController(articleVC, animated: true)
+            return
+        }
         let articleVC = ArticleViewController(nibName: "ArticleViewController", bundle: nil)
         navigationController?.pushViewController(articleVC, animated: true)
     }

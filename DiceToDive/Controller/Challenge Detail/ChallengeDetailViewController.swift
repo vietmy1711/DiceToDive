@@ -27,7 +27,7 @@ class ChallengeDetailViewController: UIViewController {
     func setupUI() {
         navigationController?.setNavigationBarHidden(false, animated: true)
         navigationItem.title = "Detail"
-        navigationController?.navigationBar.tintColor = UIColor.orange
+        navigationController?.navigationBar.tintColor = UIColor(red: 206/255, green: 173/255, blue: 67/255, alpha: 1)
         tabBarController?.tabBar.isHidden = true
         
         lblTitle.text = objectiveTitle

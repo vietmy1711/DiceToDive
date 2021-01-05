@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -46,11 +48,11 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGHLY RECOMMENDED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEL-QY-fyD">
                                             <rect key="frame" x="8" y="8" width="122" height="12"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="10"/>
-                                            <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.80784313730000001" green="0.67843137249999996" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="aEL-QY-fyD" secondAttribute="trailing" constant="8" id="7j2-wQ-cvw"/>
                                         <constraint firstAttribute="bottom" secondItem="aEL-QY-fyD" secondAttribute="bottom" constant="8" id="Frz-ph-T5K"/>
@@ -67,7 +69,7 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Dep Trai. June 23. 3 min read" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mg7-Va-wgt">
                                     <rect key="frame" x="24" y="372" width="366" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" systemColor="systemGrayColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bo5-l8-NIS">
@@ -88,7 +90,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kS-v2-S4p">
                                             <rect key="frame" x="0.0" y="0.0" width="366" height="23"/>
-                                            <mutableString key="text">This place is lovely!
+                                            <string key="text">This place is lovely!
 Located in a not too crowdy road offers that pleasant break from walking through saigon while in town.
 The staff is friendly the atmosphere is easy with effort and the food is very nice!
 Pizza trays are continuosly going out of the oven offering not too classic 
@@ -96,7 +98,7 @@ Pizza trays are continuosly going out of the oven offering not too classic
 And the music (a detail that for me is important) is never too loud but offers a spin to the entire place!
 Bravi ragazzi
 
-https://www.tripadvisor.com/ShowUserReviews-g293925-d8853334-r334132931-Vicolo1-Ho_Chi_Minh_City.html#</mutableString>
+https://www.tripadvisor.com/ShowUserReviews-g293925-d8853334-r334132931-Vicolo1-Ho_Chi_Minh_City.html#</string>
                                             <fontDescription key="fontDescription" name="PlayfairDisplay-Regular" family="Playfair Display" pointSize="17"/>
                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -128,7 +130,7 @@ https://www.tripadvisor.com/ShowUserReviews-g293925-d8853334-r334132931-Vicolo1-
                                     <rect key="frame" x="132" y="1106" width="150" height="54.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate this article" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fni-q8-i0L">
-                                            <rect key="frame" x="15.5" y="0.0" width="119" height="20.5"/>
+                                            <rect key="frame" x="16" y="0.0" width="118.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -142,7 +144,7 @@ https://www.tripadvisor.com/ShowUserReviews-g293925-d8853334-r334132931-Vicolo1-
                                                         <constraint firstAttribute="width" constant="30" id="Qo6-bq-6fl"/>
                                                         <constraint firstAttribute="height" constant="30" id="pIS-QM-Hbb"/>
                                                     </constraints>
-                                                    <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" red="0.80784313730000001" green="0.67843137249999996" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Button" image="star" catalog="system"/>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFf-AR-2Qc">
@@ -151,7 +153,7 @@ https://www.tripadvisor.com/ShowUserReviews-g293925-d8853334-r334132931-Vicolo1-
                                                         <constraint firstAttribute="height" constant="30" id="BhU-Ps-CRx"/>
                                                         <constraint firstAttribute="width" constant="30" id="aAu-S2-slB"/>
                                                     </constraints>
-                                                    <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" red="0.80784313730000001" green="0.67843137249999996" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Button" image="star" catalog="system"/>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBM-fZ-D6G">
@@ -160,7 +162,7 @@ https://www.tripadvisor.com/ShowUserReviews-g293925-d8853334-r334132931-Vicolo1-
                                                         <constraint firstAttribute="width" constant="30" id="qBR-Ef-iTn"/>
                                                         <constraint firstAttribute="height" constant="30" id="qZk-De-5US"/>
                                                     </constraints>
-                                                    <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" red="0.80784313730000001" green="0.67843137249999996" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Button" image="star" catalog="system"/>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ds-Z0-5IN">
@@ -169,7 +171,7 @@ https://www.tripadvisor.com/ShowUserReviews-g293925-d8853334-r334132931-Vicolo1-
                                                         <constraint firstAttribute="height" constant="30" id="ubP-TC-4pv"/>
                                                         <constraint firstAttribute="width" constant="30" id="wdq-pU-ioE"/>
                                                     </constraints>
-                                                    <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" red="0.80784313730000001" green="0.67843137249999996" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Button" image="star" catalog="system"/>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsw-4R-by9">
@@ -178,13 +180,13 @@ https://www.tripadvisor.com/ShowUserReviews-g293925-d8853334-r334132931-Vicolo1-
                                                         <constraint firstAttribute="height" constant="30" id="Gcx-j2-BPM"/>
                                                         <constraint firstAttribute="width" constant="30" id="WvF-Om-Dmi"/>
                                                     </constraints>
-                                                    <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" red="0.80784313730000001" green="0.67843137249999996" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Button" image="star" catalog="system"/>
                                                 </button>
                                             </subviews>
                                         </stackView>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="rao-Ca-7KM" secondAttribute="bottom" id="6RE-gL-agr"/>
                                         <constraint firstItem="fni-q8-i0L" firstAttribute="centerX" secondItem="BN4-tF-A0g" secondAttribute="centerX" id="7Ne-GI-8Zf"/>
@@ -195,7 +197,7 @@ https://www.tripadvisor.com/ShowUserReviews-g293925-d8853334-r334132931-Vicolo1-
                                     </constraints>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="Mg7-Va-wgt" firstAttribute="top" secondItem="h0k-mv-owV" secondAttribute="bottom" constant="16" id="1bQ-37-AQP"/>
                                 <constraint firstItem="bo5-l8-NIS" firstAttribute="top" secondItem="Mg7-Va-wgt" secondAttribute="bottom" constant="16" id="4Q4-NH-hBL"/>
@@ -241,14 +243,15 @@ https://www.tripadvisor.com/ShowUserReviews-g293925-d8853334-r334132931-Vicolo1-
                         <constraint firstAttribute="height" constant="40" id="5Yv-M4-0sT"/>
                         <constraint firstAttribute="width" constant="40" id="Ni4-Hf-08V"/>
                     </constraints>
-                    <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="0.80784313730000001" green="0.67843137249999996" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system"/>
                     <connections>
                         <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="KQS-3r-ktf"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="dID-8L-5PN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YgV-OA-fZ9"/>
                 <constraint firstItem="gxY-T2-62V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="ZBd-iX-dBH"/>
@@ -257,7 +260,6 @@ https://www.tripadvisor.com/ShowUserReviews-g293925-d8853334-r334132931-Vicolo1-
                 <constraint firstItem="dID-8L-5PN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jm7-ei-Wba"/>
                 <constraint firstItem="dID-8L-5PN" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="n0d-ta-CPb"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
         </view>
     </objects>
@@ -266,5 +268,11 @@ https://www.tripadvisor.com/ShowUserReviews-g293925-d8853334-r334132931-Vicolo1-
         <image name="img_buivien" width="6000" height="4000"/>
         <image name="img_buivien2" width="749" height="500"/>
         <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

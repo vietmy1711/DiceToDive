@@ -62,7 +62,7 @@ class MapViewController: UIViewController {
             let marker = GMSMarker(position: place.coordinate)
             marker.title = place.name
             marker.snippet = place.address + "\n" + place.category.rawValue
-            marker.icon = GMSMarker.markerImage(with: .orange)
+            marker.icon = GMSMarker.markerImage(with: .yellow)
             marker.map = self.mapView
             markers.append(marker)
         }
@@ -82,9 +82,9 @@ class MapViewController: UIViewController {
             marker.map = self.mapView
             markers.append(marker)
         }
-        let circleCenter = CLLocationCoordinate2D(latitude: 10.7729864, longitude: 106.6955142)
-        let circle = GMSCircle(position: circleCenter, radius: 1000)
-        circle.map = mapView
+//        let circleCenter = CLLocationCoordinate2D(latitude: 10.7729864, longitude: 106.6955142)
+//        let circle = GMSCircle(position: circleCenter, radius: 1000)
+//        circle.map = mapView
         let bounds = markers.reduce(GMSCoordinateBounds()) {
             $0.includingCoordinate($1.position)
         }
